@@ -1,0 +1,978 @@
+<!DOCTYPE html><!--[if IE 9 ]>    <html class="ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en" class="no-js"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>Naut - Bootstrap Admin Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory-->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/vendor.css">
+    <script src="scripts/vendor/modernizr.js"></script>
+    <!-- GMaps api-->
+    <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true"></script>
+  </head>
+  <body>
+    <!-- Main container-->
+    <div class="app-container">
+      <!-- top navbar-->
+      <header class="bg-primary">
+        <!-- START Top Navbar-->
+        <nav role="navigation" class="navbar topnavbar">
+          <!-- START button offset-->
+          <div class="btn-offset">
+            <button type="button" data-btn-layer-morph="" data-target="#layer-search" data-ripple="" class="btn btn-info btn-circle btn-lg shadow-z1"><em class="fa fa-search"></em></button>
+          </div>
+          <!-- START button offset-->
+          <!-- START navbar header-->
+          <div class="navbar-header"><a href="dashboard.html" class="navbar-brand"> <img src="images/logo.png" alt="App Logo" class="brand-logo"></a>
+            <!-- Mobile buttons-->
+            <div class="mobile-toggles">
+              <!-- Button to show/hide the sidebar on mobile. Visible on mobile only.--><a href="" class="sidebar-toggle"><em class="fa fa-navicon"></em></a>
+              <!-- Button to show/hide the header menu on mobile. Visible on mobile only.--><a href="#nav-collapse" data-toggle="collapse" class="menu-toggle hidden-material"><em class="fa fa-ellipsis-v fa-fw"></em></a>
+            </div>
+          </div>
+          <!-- END navbar header-->
+          <!-- START Nav wrapper-->
+          <div id="nav-collapse" class="nav-wrapper collapse navbar-collapse">
+            <!-- START Left navbar-->
+            <ul class="nav navbar-nav hidden-material">
+              <li>
+                <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops--><a href="" class="hidden-xs sidebar-toggle-off"><em class="fa fa-navicon"></em></a>
+              </li>
+              <!-- START Apps menu-->
+              <li class="dropdown"><a href="" data-toggle="dropdown" data-ripple="" class="dropdown-toggle"><em class="fa fa-th fa-fw"></em><span class="visible-xs-inline ml">Applications</span></a>
+                <!-- START Dropdown menu-->
+                <ul id="bg-white" class="dropdown-menu p wd-lg">
+                  <li class="row ml0 mr0 mt mb text-center">
+                    <div class="col-xs-4">
+                      <div class="pv"><a href="extras.profile.html"><span class="block mb"><em class="icon-head fa-2x text-warning"></em></span><small class="text-muted">Profile</small></a></div>
+                    </div>
+                    <div class="col-xs-4">
+                      <div class="pv"><a href="mailbox.html"><span class="block mb"><em class="icon-mail fa-2x text-primary"></em></span><small class="text-muted">Mailbox</small></a></div>
+                    </div>
+                    <div class="col-xs-4">
+                      <div class="pv"><a href="extras.calendar.html"><span class="block mb"><em class="fa fa-calendar fa-2x text-danger"></em></span><small class="text-muted">Calendar</small></a></div>
+                    </div>
+                    <div class="col-xs-4">
+                      <div class="pv"><a href="maps.vector.html"><span class="block mb"><em class="icon-map fa-2x text-success"></em></span><small class="text-muted">Map</small></a></div>
+                    </div>
+                    <div class="col-xs-4">
+                      <div class="pv"><a href="dashboard.html"><span class="block mb"><em class="icon-bar-graph-2 fa-2x text-info"></em></span><small class="text-muted">Dashboard</small></a></div>
+                    </div>
+                    <div class="col-xs-4">
+                      <div class="pv"><a href="extras.gallery.html"><span class="block mb"><em class="icon-image fa-2x text-muted"></em></span><small class="text-muted">Gallery</small></a></div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <!-- END Apps menu-->
+              <!-- START lock screen-->
+              <li><a href="page.lock.html" title="Lock screen" data-ripple=""><em class="icon-lock fa-fw"></em><span class="visible-xs-inline ml">Lock Screen </span></a></li>
+              <!-- END lock screen-->
+            </ul>
+            <!-- END Left navbar-->
+          </div>
+          <!-- END Nav wrapper-->
+          
+          
+        </nav>
+        <!-- END Top Navbar-->
+      </header>
+      <!-- Sidebar-->
+      <aside class="bg-white">
+        <!-- START Sidebar-->
+        <div class="sidebar-wrapper">
+          <div data-ui-sidebar="" class="sidebar">
+            <div class="sidebar-nav">
+              <ul class="nav">
+                <!-- Iterates over all sidebar items-->
+                <li class="nav-heading"><span class="text-muted">Main Navigation</span></li>
+                <li><a href="dashboard.html" title="Dashboard" data-ripple="">
+                    <div class="label pull-right label-success">4</div><em class="sidebar-item-icon icon-pie-graph"></em><span>Dashboard</span></a></li>
+                <li><a href="cards.html" title="Cards" data-ripple=""><em class="sidebar-item-icon icon-stack"></em><span>Cards</span></a></li>
+                <li><a href="mailbox.html" title="Mailbox" data-ripple="">
+                    <div class="label pull-right label-success">12</div><em class="sidebar-item-icon icon-mail"></em><span>Mailbox</span></a></li>
+                <li><a href="" title="Layouts" data-ripple=""><em class="sidebar-item-caret fa pull-right fa-angle-right"></em><em class="sidebar-item-icon icon-layout"></em><span>Layouts</span></a>
+                  <ul class="nav sidebar-subnav">
+                    <li class="sidebar-subnav-header"><a><em class="sidebar-item-icon fa fa-angle-right"></em>Layouts</a></li>
+                    <li><a href="dashboard.docked.html" title="Docked" data-ripple=""><em class="sidebar-item-icon"></em><span>Docked</span></a></li>
+                    <li><a href="layout.columns.html" title="Full Height" data-ripple=""><em class="sidebar-item-icon"></em><span>Full Height</span></a></li>
+                  </ul>
+                </li>
+                <li>
+                  <hr>
+                </li>
+                <li><a href="" title="Components" data-ripple=""><em class="sidebar-item-caret fa pull-right fa-angle-right"></em><em class="sidebar-item-icon icon-box"></em><span>Components</span></a>
+                  <ul class="nav sidebar-subnav">
+                    <li class="sidebar-subnav-header"><a><em class="sidebar-item-icon fa fa-angle-right"></em>Components</a></li>
+                    <li><a href="ui.buttons.html" title="Buttons" data-ripple=""><em class="sidebar-item-icon"></em><span>Buttons</span></a></li>
+                    <li><a href="ui.notifications.html" title="Notifications" data-ripple=""><em class="sidebar-item-icon"></em><span>Notifications</span></a></li>
+                    <li><a href="ui.panels.html" title="Panels" data-ripple=""><em class="sidebar-item-icon"></em><span>Panels</span></a></li>
+                    <li>
+                      <hr>
+                    </li>
+                    <li><a href="ui.nestable.html" title="Nestable" data-ripple=""><em class="sidebar-item-icon"></em><span>Nestable</span></a></li>
+                    <li><a href="ui.sortable.html" title="Sortable" data-ripple=""><em class="sidebar-item-icon"></em><span>Sortable</span></a></li>
+                    <li><a href="ui.grid.html" title="Grid" data-ripple=""><em class="sidebar-item-icon"></em><span>Grid</span></a></li>
+                    <li><a href="ui.grid-masonry.html" title="Grid Masonry" data-ripple=""><em class="sidebar-item-icon"></em><span>Grid Masonry</span></a></li>
+                    <li><a href="ui.typo.html" title="Typography" data-ripple=""><em class="sidebar-item-icon"></em><span>Typography</span></a></li>
+                    <li><a href="ui.palette.html" title="Palette" data-ripple=""><em class="sidebar-item-icon"></em><span>Palette</span></a></li>
+                  </ul>
+                </li>
+                <li><a href="" title="Forms" data-ripple=""><em class="sidebar-item-caret fa pull-right fa-angle-right"></em><em class="sidebar-item-icon icon-book"></em><span>Forms</span></a>
+                  <ul class="nav sidebar-subnav">
+                    <li class="sidebar-subnav-header"><a><em class="sidebar-item-icon fa fa-angle-right"></em>Forms</a></li>
+                    <li><a href="form.inputs.html" title="Inputs" data-ripple=""><em class="sidebar-item-icon"></em><span>Inputs</span></a></li>
+                    <li><a href="form.validation.html" title="Validation" data-ripple=""><em class="sidebar-item-icon"></em><span>Validation</span></a></li>
+                    <li><a href="form.wizard.html" title="Wizard" data-ripple=""><em class="sidebar-item-icon"></em><span>Wizard</span></a></li>
+                    <li><a href="form.upload.html" title="Upload" data-ripple=""><em class="sidebar-item-icon"></em><span>Upload</span></a></li>
+                    <li><a href="form.xeditable.html" title="xEditable" data-ripple=""><em class="sidebar-item-icon"></em><span>xEditable</span></a></li>
+                    <li><a href="form.imagecrop.html" title="Image Crop" data-ripple=""><em class="sidebar-item-icon"></em><span>Image Crop</span></a></li>
+                  </ul>
+                </li>
+                <li><a href="" title="Tables" data-ripple=""><em class="sidebar-item-caret fa pull-right fa-angle-right"></em><em class="sidebar-item-icon icon-grid"></em><span>Tables</span></a>
+                  <ul class="nav sidebar-subnav">
+                    <li class="sidebar-subnav-header"><a><em class="sidebar-item-icon fa fa-angle-right"></em>Tables</a></li>
+                    <li><a href="table.responsive.html" title="Responsive" data-ripple=""><em class="sidebar-item-icon"></em><span>Responsive</span></a></li>
+                    <li><a href="table.datatables.html" title="Datables" data-ripple=""><em class="sidebar-item-icon"></em><span>Datables</span></a></li>
+                  </ul>
+                </li>
+                <li><a href="" title="Flot" data-ripple=""><em class="sidebar-item-caret fa pull-right fa-angle-right"></em><em class="sidebar-item-icon icon-bar-graph"></em><span>Charts</span></a>
+                  <ul class="nav sidebar-subnav">
+                    <li class="sidebar-subnav-header"><a><em class="sidebar-item-icon fa fa-angle-right"></em>Charts</a></li>
+                    <li><a href="charts.flot.html" title="Flot" data-ripple=""><em class="sidebar-item-icon"></em><span>Flot</span></a></li>
+                    <li><a href="charts.pie.html" title="Pie Charts" data-ripple=""><em class="sidebar-item-icon"></em><span>Pie</span></a></li>
+                  </ul>
+                </li>
+                <li><a href="" title="Maps" data-ripple=""><em class="sidebar-item-caret fa pull-right fa-angle-right"></em><em class="sidebar-item-icon icon-map"></em><span>Maps</span></a>
+                  <ul class="nav sidebar-subnav">
+                    <li class="sidebar-subnav-header"><a><em class="sidebar-item-icon fa fa-angle-right"></em>Maps</a></li>
+                    <li><a href="maps.google.html" title="Google Maps" data-ripple=""><em class="sidebar-item-icon"></em><span>Google Maps</span></a></li>
+                    <li><a href="maps.vector.html" title="Vector Maps" data-ripple=""><em class="sidebar-item-icon"></em><span>Vector Maps</span></a></li>
+                  </ul>
+                </li>
+                <li><a href="" title="Icons" data-ripple=""><em class="sidebar-item-caret fa pull-right fa-angle-right"></em><em class="sidebar-item-icon icon-play"></em><span>Icons</span></a>
+                  <ul class="nav sidebar-subnav">
+                    <li class="sidebar-subnav-header"><a><em class="sidebar-item-icon fa fa-angle-right"></em>Icons</a></li>
+                    <li><a href="icons.feather.html" title="Feather Icons" data-ripple=""><em class="sidebar-item-icon"></em><span>Feather Icons</span></a></li>
+                    <li><a href="icons.fa.html" title="Font Awesome" data-ripple=""><em class="sidebar-item-icon"></em><span>Font Awesome</span></a></li>
+                    <li><a href="icons.climacon.html" title="Climacons" data-ripple=""><em class="sidebar-item-icon"></em><span>Climacons</span></a></li>
+                    <li><a href="icons.weather.html" title="Weather Icons" data-ripple=""><em class="sidebar-item-icon"></em><span>Weather Icons</span></a></li>
+                  </ul>
+                </li>
+                <li>
+                  <hr>
+                </li>
+                <li class="nav-heading"><span class="text-muted">Extras</span></li>
+                <li><a href="" title="Extras" data-ripple=""><em class="sidebar-item-caret fa pull-right fa-angle-right"></em><em class="sidebar-item-icon icon-ribbon"></em><span>Extras</span></a>
+                  <ul class="nav sidebar-subnav">
+                    <li class="sidebar-subnav-header"><a><em class="sidebar-item-icon fa fa-angle-right"></em>Extras</a></li>
+                    <li><a href="extras.calendar.html" title="Calendar" data-ripple=""><em class="sidebar-item-icon"></em><span>Calendar</span></a></li>
+                    <li><a href="extras.tasks.html" title="Tasks List" data-ripple=""><em class="sidebar-item-icon"></em><span>Tasks List</span></a></li>
+                    <li><a href="extras.chat.html" title="Chat" data-ripple=""><em class="sidebar-item-icon"></em><span>Chat</span></a></li>
+                    <li>
+                      <hr>
+                    </li>
+                    <li><a href="extras.invoice.html" title="Invoice" data-ripple=""><em class="sidebar-item-icon"></em><span>Invoice</span></a></li>
+                    <li><a href="extras.price-table.html" title="Price" data-ripple=""><em class="sidebar-item-icon"></em><span>Price</span></a></li>
+                    <li><a href="extras.search.html" title="Search" data-ripple=""><em class="sidebar-item-icon"></em><span>Search</span></a></li>
+                    <li><a href="extras.timeline.html" title="Timeline" data-ripple=""><em class="sidebar-item-icon"></em><span>Timeline</span></a></li>
+                    <li><a href="extras.projects.html" title="Projects" data-ripple=""><em class="sidebar-item-icon"></em><span>Projects</span></a></li>
+                    <li><a href="extras.gallery.html" title="Gallery" data-ripple=""><em class="sidebar-item-icon"></em><span>Gallery</span></a></li>
+                    <li><a href="extras.profile.html" title="Profile" data-ripple=""><em class="sidebar-item-icon"></em><span>Profile</span></a></li>
+                    <li><a href="extras.template.html" title="Template" data-ripple=""><em class="sidebar-item-icon"></em><span>Template</span></a></li>
+                  </ul>
+                </li>
+                <li><a href="" title="Pages" data-ripple=""><em class="sidebar-item-caret fa pull-right fa-angle-right"></em><em class="sidebar-item-icon icon-stack"></em><span>Pages</span></a>
+                  <ul class="nav sidebar-subnav">
+                    <li class="sidebar-subnav-header"><a><em class="sidebar-item-icon fa fa-angle-right"></em>Pages</a></li>
+                    <li><a href="page.login.html" title="Login" data-ripple=""><em class="sidebar-item-icon"></em><span>Login</span></a></li>
+                    <li><a href="page.register.html" title="Sign up" data-ripple=""><em class="sidebar-item-icon"></em><span>Sign up</span></a></li>
+                    <li><a href="page.recover.html" title="Recover Password" data-ripple=""><em class="sidebar-item-icon"></em><span>Recover Password</span></a></li>
+                    <li><a href="page.lock.html" title="Lock" data-ripple=""><em class="sidebar-item-icon"></em><span>Lock</span></a></li>
+                  </ul>
+                </li>
+                <li><a href="../../angularjs" title="Static" ripple="" class="bg-danger"><em class="text-white sidebar-item-icon fa fa-shield"></em><span class="text-white">AngularJS Version</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- END Sidebar-->
+      </aside>
+      <!-- Main-->
+      <section>
+        <!-- Content-->
+        <div class="app">
+          <div class="app-view-header">Icons<small>Font Awesome gives you scalable vector icons that can instantly be customized</small></div>
+          <div id="demo-icons">
+            <!-- START #web-application-->
+            <section id="web-application">
+              <h4 class="page-header">Web Application Icons</h4>
+              <div class="row list-icon">
+                <div class="col-md-3 col-sm-4"><em class="fa fa-adjust"></em>fa-adjust</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-anchor"></em>fa-anchor</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-archive"></em>fa-archive</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-arrows"></em>fa-arrows</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-arrows-h"></em>fa-arrows-h</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-arrows-v"></em>fa-arrows-v</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-asterisk"></em>fa-asterisk</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-ban"></em>fa-ban</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-bar-chart-o"></em>fa-bar-chart-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-barcode"></em>fa-barcode</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-bars"></em>fa-bars</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-beer"></em>fa-beer</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-bell"></em>fa-bell</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-bell-o"></em>fa-bell-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-bolt"></em>fa-bolt</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-book"></em>fa-book</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-bookmark"></em>fa-bookmark</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-bookmark-o"></em>fa-bookmark-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-briefcase"></em>fa-briefcase</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-bug"></em>fa-bug</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-building-o"></em>fa-building-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-bullhorn"></em>fa-bullhorn</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-bullseye"></em>fa-bullseye</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-calendar"></em>fa-calendar</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-calendar-o"></em>fa-calendar-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-camera"></em>fa-camera</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-camera-retro"></em>fa-camera-retro</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-caret-square-o-down"></em>fa-caret-square-o-down</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-caret-square-o-left"></em>fa-caret-square-o-left</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-caret-square-o-right"></em>fa-caret-square-o-right</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-caret-square-o-up"></em>fa-caret-square-o-up</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-certificate"></em>fa-certificate</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-check"></em>fa-check</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-check-circle"></em>fa-check-circle</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-check-circle-o"></em>fa-check-circle-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-check-square"></em>fa-check-square</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-check-square-o"></em>fa-check-square-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-circle"></em>fa-circle</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-circle-o"></em>fa-circle-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-clock-o"></em>fa-clock-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-cloud"></em>fa-cloud</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-cloud-download"></em>fa-cloud-download</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-cloud-upload"></em>fa-cloud-upload</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-code"></em>fa-code</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-code-fork"></em>fa-code-fork</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-coffee"></em>fa-coffee</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-cog"></em>fa-cog</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-cogs"></em>fa-cogs</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-comment"></em>fa-comment</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-comment-o"></em>fa-comment-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-comments"></em>fa-comments</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-comments-o"></em>fa-comments-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-compass"></em>fa-compass</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-credit-card"></em>fa-credit-card</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-crop"></em>fa-crop</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-crosshairs"></em>fa-crosshairs</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-cutlery"></em>fa-cutlery</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-dashboard"></em>fa-dashboard<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-desktop"></em>fa-desktop</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-dot-circle-o"></em>fa-dot-circle-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-download"></em>fa-download</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-edit"></em>fa-edit<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-ellipsis-h"></em>fa-ellipsis-h</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-ellipsis-v"></em>fa-ellipsis-v</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-envelope"></em>fa-envelope</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-envelope-o"></em>fa-envelope-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-eraser"></em>fa-eraser</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-exchange"></em>fa-exchange</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-exclamation"></em>fa-exclamation</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-exclamation-circle"></em>fa-exclamation-circle</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-exclamation-triangle"></em>fa-exclamation-triangle</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-external-link"></em>fa-external-link</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-external-link-square"></em>fa-external-link-square</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-eye"></em>fa-eye</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-eye-slash"></em>fa-eye-slash</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-female"></em>fa-female</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-fighter-jet"></em>fa-fighter-jet</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-film"></em>fa-film</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-filter"></em>fa-filter</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-fire"></em>fa-fire</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-fire-extinguisher"></em>fa-fire-extinguisher</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-flag"></em>fa-flag</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-flag-checkered"></em>fa-flag-checkered</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-flag-o"></em>fa-flag-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-flash"></em>fa-flash<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-flask"></em>fa-flask</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-folder"></em>fa-folder</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-folder-o"></em>fa-folder-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-folder-open"></em>fa-folder-open</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-folder-open-o"></em>fa-folder-open-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-frown-o"></em>fa-frown-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-gamepad"></em>fa-gamepad</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-gavel"></em>fa-gavel</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-gear"></em>fa-gear<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-gears"></em>fa-gears<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-gift"></em>fa-gift</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-glass"></em>fa-glass</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-globe"></em>fa-globe</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-group"></em>fa-group<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-hdd-o"></em>fa-hdd-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-headphones"></em>fa-headphones</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-heart"></em>fa-heart</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-heart-o"></em>fa-heart-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-home"></em>fa-home</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-inbox"></em>fa-inbox</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-info"></em>fa-info</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-info-circle"></em>fa-info-circle</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-key"></em>fa-key</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-keyboard-o"></em>fa-keyboard-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-laptop"></em>fa-laptop</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-leaf"></em>fa-leaf</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-legal"></em>fa-legal<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-lemon-o"></em>fa-lemon-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-level-down"></em>fa-level-down</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-level-up"></em>fa-level-up</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-lightbulb-o"></em>fa-lightbulb-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-location-arrow"></em>fa-location-arrow</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-lock"></em>fa-lock</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-magic"></em>fa-magic</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-magnet"></em>fa-magnet</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-mail-forward"></em>fa-mail-forward<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-mail-reply"></em>fa-mail-reply<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-mail-reply-all"></em>fa-mail-reply-all</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-male"></em>fa-male</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-map-marker"></em>fa-map-marker</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-meh-o"></em>fa-meh-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-microphone"></em>fa-microphone</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-microphone-slash"></em>fa-microphone-slash</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-minus"></em>fa-minus</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-minus-circle"></em>fa-minus-circle</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-minus-square"></em>fa-minus-square</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-minus-square-o"></em>fa-minus-square-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-mobile"></em>fa-mobile</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-mobile-phone"></em>fa-mobile-phone<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-money"></em>fa-money</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-moon-o"></em>fa-moon-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-music"></em>fa-music</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-pencil"></em>fa-pencil</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-pencil-square"></em>fa-pencil-square</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-pencil-square-o"></em>fa-pencil-square-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-phone"></em>fa-phone</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-phone-square"></em>fa-phone-square</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-picture-o"></em>fa-picture-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-plane"></em>fa-plane</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-plus"></em>fa-plus</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-plus-circle"></em>fa-plus-circle</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-plus-square"></em>fa-plus-square</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-plus-square-o"></em>fa-plus-square-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-power-off"></em>fa-power-off</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-print"></em>fa-print</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-puzzle-piece"></em>fa-puzzle-piece</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-qrcode"></em>fa-qrcode</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-question"></em>fa-question</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-question-circle"></em>fa-question-circle</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-quote-left"></em>fa-quote-left</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-quote-right"></em>fa-quote-right</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-random"></em>fa-random</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-refresh"></em>fa-refresh</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-reply"></em>fa-reply</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-reply-all"></em>fa-reply-all</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-retweet"></em>fa-retweet</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-road"></em>fa-road</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-rocket"></em>fa-rocket</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-rss"></em>fa-rss</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-rss-square"></em>fa-rss-square</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-search"></em>fa-search</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-search-minus"></em>fa-search-minus</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-search-plus"></em>fa-search-plus</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-share"></em>fa-share</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-share-square"></em>fa-share-square</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-share-square-o"></em>fa-share-square-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-shield"></em>fa-shield</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-shopping-cart"></em>fa-shopping-cart</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-sign-in"></em>fa-sign-in</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-sign-out"></em>fa-sign-out</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-signal"></em>fa-signal</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-sitemap"></em>fa-sitemap</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-smile-o"></em>fa-smile-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-sort"></em>fa-sort</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-sort-alpha-asc"></em>fa-sort-alpha-asc</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-sort-alpha-desc"></em>fa-sort-alpha-desc</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-sort-amount-asc"></em>fa-sort-amount-asc</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-sort-amount-desc"></em>fa-sort-amount-desc</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-sort-asc"></em>fa-sort-asc</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-sort-desc"></em>fa-sort-desc</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-sort-down"></em>fa-sort-down<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-sort-numeric-asc"></em>fa-sort-numeric-asc</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-sort-numeric-desc"></em>fa-sort-numeric-desc</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-sort-up"></em>fa-sort-up<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-spinner"></em>fa-spinner</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-square"></em>fa-square</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-square-o"></em>fa-square-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-star"></em>fa-star</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-star-half"></em>fa-star-half</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-star-half-empty"></em>fa-star-half-empty<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-star-half-full"></em>fa-star-half-full<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-star-half-o"></em>fa-star-half-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-star-o"></em>fa-star-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-subscript"></em>fa-subscript</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-suitcase"></em>fa-suitcase</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-sun-o"></em>fa-sun-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-superscript"></em>fa-superscript</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-tablet"></em>fa-tablet</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-tachometer"></em>fa-tachometer</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-tag"></em>fa-tag</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-tags"></em>fa-tags</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-tasks"></em>fa-tasks</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-terminal"></em>fa-terminal</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-thumb-tack"></em>fa-thumb-tack</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-thumbs-down"></em>fa-thumbs-down</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-thumbs-o-down"></em>fa-thumbs-o-down</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-thumbs-o-up"></em>fa-thumbs-o-up</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-thumbs-up"></em>fa-thumbs-up</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-ticket"></em>fa-ticket</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-times"></em>fa-times</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-times-circle"></em>fa-times-circle</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-times-circle-o"></em>fa-times-circle-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-tint"></em>fa-tint</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-toggle-down"></em>fa-toggle-down<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-toggle-left"></em>fa-toggle-left<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-toggle-right"></em>fa-toggle-right<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-toggle-up"></em>fa-toggle-up<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-trash-o"></em>fa-trash-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-trophy"></em>fa-trophy</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-truck"></em>fa-truck</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-umbrella"></em>fa-umbrella</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-unlock"></em>fa-unlock</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-unlock-alt"></em>fa-unlock-alt</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-unsorted"></em>fa-unsorted<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-upload"></em>fa-upload</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-user"></em>fa-user</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-users"></em>fa-users</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-video-camera"></em>fa-video-camera</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-volume-down"></em>fa-volume-down</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-volume-off"></em>fa-volume-off</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-volume-up"></em>fa-volume-up</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-warning"></em>fa-warning<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-wheelchair"></em>fa-wheelchair</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-wrench"></em>fa-wrench</div>
+              </div>
+            </section>
+            <!-- END #web-application-->
+            <!-- START #form-control-->
+            <section id="form-control">
+              <h4 class="page-header">Form Control Icons</h4>
+              <div class="row list-icon">
+                <div class="col-md-3 col-sm-4"><em class="fa fa-check-square"></em>fa-check-square</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-check-square-o"></em>fa-check-square-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-circle"></em>fa-circle</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-circle-o"></em>fa-circle-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-dot-circle-o"></em>fa-dot-circle-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-minus-square"></em>fa-minus-square</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-minus-square-o"></em>fa-minus-square-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-plus-square"></em>fa-plus-square</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-plus-square-o"></em>fa-plus-square-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-square"></em>fa-square</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-square-o"></em>fa-square-o</div>
+              </div>
+            </section>
+            <!-- END #form-control-->
+            <!-- START #currency-->
+            <section id="currency">
+              <h4 class="page-header">Currency Icons</h4>
+              <div class="row list-icon">
+                <div class="col-md-3 col-sm-4"><em class="fa fa-bitcoin"></em>fa-bitcoin<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-btc"></em>fa-btc</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-cny"></em>fa-cny<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-dollar"></em>fa-dollar<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-eur"></em>fa-eur</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-euro"></em>fa-euro<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-gbp"></em>fa-gbp</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-inr"></em>fa-inr</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-jpy"></em>fa-jpy</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-krw"></em>fa-krw</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-money"></em>fa-money</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-rmb"></em>fa-rmb<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-rouble"></em>fa-rouble<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-rub"></em>fa-rub</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-ruble"></em>fa-ruble<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-rupee"></em>fa-rupee<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-try"></em>fa-try</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-turkish-lira"></em>fa-turkish-lira<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-usd"></em>fa-usd</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-won"></em>fa-won<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-yen"></em>fa-yen<span class="text-muted">(alias)</span></div>
+              </div>
+            </section>
+            <!-- END #currency-->
+            <!-- START #text-editor-->
+            <section id="text-editor">
+              <h4 class="page-header">Text Editor Icons</h4>
+              <div class="row list-icon">
+                <div class="col-md-3 col-sm-4"><em class="fa fa-align-center"></em>fa-align-center</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-align-justify"></em>fa-align-justify</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-align-left"></em>fa-align-left</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-align-right"></em>fa-align-right</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-bold"></em>fa-bold</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-chain"></em>fa-chain<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-chain-broken"></em>fa-chain-broken</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-clipboard"></em>fa-clipboard</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-columns"></em>fa-columns</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-copy"></em>fa-copy<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-cut"></em>fa-cut<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-dedent"></em>fa-dedent<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-eraser"></em>fa-eraser</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-file"></em>fa-file</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-file-o"></em>fa-file-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-file-text"></em>fa-file-text</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-file-text-o"></em>fa-file-text-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-files-o"></em>fa-files-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-floppy-o"></em>fa-floppy-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-font"></em>fa-font</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-indent"></em>fa-indent</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-italic"></em>fa-italic</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-link"></em>fa-link</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-list"></em>fa-list</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-list-alt"></em>fa-list-alt</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-list-ol"></em>fa-list-ol</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-list-ul"></em>fa-list-ul</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-outdent"></em>fa-outdent</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-paperclip"></em>fa-paperclip</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-paste"></em>fa-paste<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-repeat"></em>fa-repeat</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-rotate-left"></em>fa-rotate-left<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-rotate-right"></em>fa-rotate-right<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-save"></em>fa-save<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-scissors"></em>fa-scissors</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-strikethrough"></em>fa-strikethrough</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-table"></em>fa-table</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-text-height"></em>fa-text-height</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-text-width"></em>fa-text-width</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-th"></em>fa-th</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-th-large"></em>fa-th-large</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-th-list"></em>fa-th-list</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-underline"></em>fa-underline</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-undo"></em>fa-undo</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-unlink"></em>fa-unlink<span class="text-muted">(alias)</span></div>
+              </div>
+            </section>
+            <!-- END #text-editor-->
+            <!-- START #directional-->
+            <section id="directional">
+              <h4 class="page-header">Directional Icons</h4>
+              <div class="row list-icon">
+                <div class="col-md-3 col-sm-4"><em class="fa fa-angle-double-down"></em>fa-angle-double-down</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-angle-double-left"></em>fa-angle-double-left</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-angle-double-right"></em>fa-angle-double-right</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-angle-double-up"></em>fa-angle-double-up</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-angle-down"></em>fa-angle-down</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-angle-left"></em>fa-angle-left</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-angle-right"></em>fa-angle-right</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-angle-up"></em>fa-angle-up</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-arrow-circle-down"></em>fa-arrow-circle-down</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-arrow-circle-left"></em>fa-arrow-circle-left</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-arrow-circle-o-down"></em>fa-arrow-circle-o-down</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-arrow-circle-o-left"></em>fa-arrow-circle-o-left</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-arrow-circle-o-right"></em>fa-arrow-circle-o-right</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-arrow-circle-o-up"></em>fa-arrow-circle-o-up</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-arrow-circle-right"></em>fa-arrow-circle-right</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-arrow-circle-up"></em>fa-arrow-circle-up</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-arrow-down"></em>fa-arrow-down</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-arrow-left"></em>fa-arrow-left</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-arrow-right"></em>fa-arrow-right</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-arrow-up"></em>fa-arrow-up</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-arrows"></em>fa-arrows</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-arrows-alt"></em>fa-arrows-alt</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-arrows-h"></em>fa-arrows-h</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-arrows-v"></em>fa-arrows-v</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-caret-down"></em>fa-caret-down</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-caret-left"></em>fa-caret-left</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-caret-right"></em>fa-caret-right</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-caret-square-o-down"></em>fa-caret-square-o-down</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-caret-square-o-left"></em>fa-caret-square-o-left</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-caret-square-o-right"></em>fa-caret-square-o-right</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-caret-square-o-up"></em>fa-caret-square-o-up</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-caret-up"></em>fa-caret-up</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-chevron-circle-down"></em>fa-chevron-circle-down</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-chevron-circle-left"></em>fa-chevron-circle-left</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-chevron-circle-right"></em>fa-chevron-circle-right</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-chevron-circle-up"></em>fa-chevron-circle-up</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-chevron-down"></em>fa-chevron-down</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-chevron-left"></em>fa-chevron-left</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-chevron-right"></em>fa-chevron-right</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-chevron-up"></em>fa-chevron-up</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-hand-o-down"></em>fa-hand-o-down</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-hand-o-left"></em>fa-hand-o-left</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-hand-o-right"></em>fa-hand-o-right</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-hand-o-up"></em>fa-hand-o-up</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-long-arrow-down"></em>fa-long-arrow-down</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-long-arrow-left"></em>fa-long-arrow-left</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-long-arrow-right"></em>fa-long-arrow-right</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-long-arrow-up"></em>fa-long-arrow-up</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-toggle-down"></em>fa-toggle-down<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-toggle-left"></em>fa-toggle-left<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-toggle-right"></em>fa-toggle-right<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-toggle-up"></em>fa-toggle-up<span class="text-muted">(alias)</span></div>
+              </div>
+            </section>
+            <!-- END #directional-->
+            <!-- START #video-player-->
+            <section id="video-player">
+              <h4 class="page-header">Video Player Icons</h4>
+              <div class="row list-icon">
+                <div class="col-md-3 col-sm-4"><em class="fa fa-arrows-alt"></em>fa-arrows-alt</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-backward"></em>fa-backward</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-compress"></em>fa-compress</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-eject"></em>fa-eject</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-expand"></em>fa-expand</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-fast-backward"></em>fa-fast-backward</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-fast-forward"></em>fa-fast-forward</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-forward"></em>fa-forward</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-pause"></em>fa-pause</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-play"></em>fa-play</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-play-circle"></em>fa-play-circle</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-play-circle-o"></em>fa-play-circle-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-step-backward"></em>fa-step-backward</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-step-forward"></em>fa-step-forward</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-stop"></em>fa-stop</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-youtube-play"></em>fa-youtube-play</div>
+              </div>
+            </section>
+            <!-- END #video-player-->
+            <!-- START #brand-->
+            <section id="brand">
+              <h4 class="page-header">Brand Icons</h4>
+              <div class="alert alert-success">
+                <ul class="margin-bottom-none padding-left-lg">
+                  <li>All brand icons are trademarks of their respective owners.</li>
+                  <li>The use of these trademarks does not indicate endorsement of the trademark holder by Font Awesome, nor vice versa.</li>
+                </ul>
+              </div>
+              <div class="row list-icon">
+                <div class="col-md-3 col-sm-4"><em class="fa fa-adn"></em>fa-adn</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-android"></em>fa-android</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-apple"></em>fa-apple</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-bitbucket"></em>fa-bitbucket</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-bitbucket-square"></em>fa-bitbucket-square</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-bitcoin"></em>fa-bitcoin<span class="text-muted">(alias)</span></div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-btc"></em>fa-btc</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-css3"></em>fa-css3</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-dribbble"></em>fa-dribbble</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-dropbox"></em>fa-dropbox</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-facebook"></em>fa-facebook</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-facebook-square"></em>fa-facebook-square</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-flickr"></em>fa-flickr</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-foursquare"></em>fa-foursquare</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-github"></em>fa-github</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-github-alt"></em>fa-github-alt</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-github-square"></em>fa-github-square</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-gittip"></em>fa-gittip</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-google-plus"></em>fa-google-plus</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-google-plus-square"></em>fa-google-plus-square</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-html5"></em>fa-html5</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-instagram"></em>fa-instagram</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-linkedin"></em>fa-linkedin</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-linkedin-square"></em>fa-linkedin-square</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-linux"></em>fa-linux</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-maxcdn"></em>fa-maxcdn</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-pagelines"></em>fa-pagelines</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-pinterest"></em>fa-pinterest</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-pinterest-square"></em>fa-pinterest-square</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-renren"></em>fa-renren</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-skype"></em>fa-skype</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-stack-exchange"></em>fa-stack-exchange</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-stack-overflow"></em>fa-stack-overflow</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-trello"></em>fa-trello</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-tumblr"></em>fa-tumblr</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-tumblr-square"></em>fa-tumblr-square</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-twitter"></em>fa-twitter</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-twitter-square"></em>fa-twitter-square</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-vimeo-square"></em>fa-vimeo-square</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-vk"></em>fa-vk</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-weibo"></em>fa-weibo</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-windows"></em>fa-windows</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-xing"></em>fa-xing</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-xing-square"></em>fa-xing-square</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-youtube"></em>fa-youtube</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-youtube-play"></em>fa-youtube-play</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-youtube-square"></em>fa-youtube-square</div>
+              </div>
+            </section>
+            <!-- END #brand-->
+            <!-- START #medical-->
+            <section id="medical">
+              <h4 class="page-header">Medical Icons</h4>
+              <div class="row list-icon">
+                <div class="col-md-3 col-sm-4"><em class="fa fa-ambulance"></em>fa-ambulance</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-h-square"></em>fa-h-square</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-hospital-o"></em>fa-hospital-o</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-medkit"></em>fa-medkit</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-plus-square"></em>fa-plus-square</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-stethoscope"></em>fa-stethoscope</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-user-md"></em>fa-user-md</div>
+                <div class="col-md-3 col-sm-4"><em class="fa fa-wheelchair"></em>fa-wheelchair</div>
+              </div>
+            </section>
+            <!-- END #medical-->
+          </div>
+        </div>
+      </section>
+      <!-- Page footer-->
+      <footer><span>&copy; 2015 - Application Name</span></footer>
+    </div>
+    <!-- Settings-->
+    <div class="settings-wrapper">
+      <div class="settings-inner">
+        <div class="settings-button"><em class="icon-cog"></em></div>
+        <div class="settings">
+          <div class="settings-inner">
+            <div class="settings-content">
+              <div class="pt ph">
+                <p class="text-muted">THEMES</p>
+                <div class="clearfix mb">
+                  <div class="pull-left wd-tiny mb">
+                    <div class="setting-color">
+                      <label>
+                        <input type="radio" name="setting-theme" value="0"><span class="icon-check"></span><span class="list-table"><span class="bg-white"></span><span class="bg-primary"></span><span class="bg-primary"></span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="pull-left wd-tiny mb">
+                    <div class="setting-color">
+                      <label>
+                        <input type="radio" name="setting-theme" value="1"><span class="icon-check"></span><span class="list-table"><span class="bg-white"></span><span class="bg-purple"></span><span class="bg-purple"></span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="pull-left wd-tiny mb">
+                    <div class="setting-color">
+                      <label>
+                        <input type="radio" name="setting-theme" value="2"><span class="icon-check"></span><span class="list-table"><span class="bg-white"></span><span class="bg-success"></span><span class="bg-success"></span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="pull-left wd-tiny mb">
+                    <div class="setting-color">
+                      <label>
+                        <input type="radio" name="setting-theme" value="3"><span class="icon-check"></span><span class="list-table"><span class="bg-white"></span><span class="bg-warning"></span><span class="bg-warning"></span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="pull-left wd-tiny mb">
+                    <div class="setting-color">
+                      <label>
+                        <input type="radio" name="setting-theme" value="4"><span class="icon-check"></span><span class="list-table"><span class="bg-white"></span><span class="bg-info"></span><span class="bg-info"></span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="pull-left wd-tiny mb">
+                    <div class="setting-color">
+                      <label>
+                        <input type="radio" name="setting-theme" value="5"><span class="icon-check"></span><span class="list-table"><span class="bg-white"></span><span class="bg-danger"></span><span class="bg-danger"></span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="pull-left wd-tiny mb">
+                    <div class="setting-color">
+                      <label>
+                        <input type="radio" name="setting-theme" value="6"><span class="icon-check"></span><span class="list-table"><span class="bg-white"></span><span class="bg-pink"></span><span class="bg-pink"></span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="pull-left wd-tiny mb">
+                    <div class="setting-color">
+                      <label>
+                        <input type="radio" name="setting-theme" value="7"><span class="icon-check"></span><span class="list-table"><span class="bg-white"></span><span class="bg-amber"></span><span class="bg-amber"></span></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="p">
+                <p class="text-muted">LAYOUT</p>
+                <div class="clearfix">
+                  <p class="pull-left">Fixed</p>
+                  <div class="pull-right">
+                    <label class="switch switch-info">
+                      <input id="layoutisfixed" type="checkbox"><span></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="clearfix">
+                  <p class="pull-left">Boxed</p>
+                  <div class="pull-right">
+                    <label class="switch switch-info">
+                      <input id="layoutisboxed" type="checkbox"><span></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="clearfix">
+                  <p class="pull-left">Material</p>
+                  <div class="pull-right">
+                    <label class="switch switch-info">
+                      <input id="layoutismaterial" type="checkbox"><span></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="p">
+                <p class="text-muted">SIDEBAR</p>
+                <div class="clearfix">
+                  <p class="pull-left">Mini</p>
+                  <div class="pull-right">
+                    <label class="switch switch-info">
+                      <input id="sidebarismini" type="checkbox"><span></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="clearfix">
+                  <p class="pull-left">Right</p>
+                  <div class="pull-right">
+                    <label class="switch switch-info">
+                      <input id="sidebarisright" type="checkbox"><span></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="p">
+                <p class="text-muted">FOOTER</p>
+                <div class="clearfix">
+                  <p class="pull-left">Hidden</p>
+                  <div class="pull-right">
+                    <label class="switch switch-info">
+                      <input id="footerhidden" type="checkbox"><span></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Settings-->
+    <!-- Layer Morph-->
+    <div class="layer-morph-overlay">
+      <div class="layer-morph-inner bg-info"></div>
+    </div>
+    <div class="layer-morph-close"><em class="icon-cross"></em></div>
+    <div class="layer-morph-container bg-info">
+      <div class="layer-morph-wrapper">
+        <div id="layer-search" class="layer-morph">
+          <form action="#">
+            <p class="help-block">Type and hit enter to search</p>
+            <input type="text" placeholder="I'm looking for..." class="form-control input-huge">
+            <button type="submit" class="hidden">Search</button>
+          </form>
+          <div class="row">
+            <div class="col-md-4 col-sm-6 pv">
+              <h4 class="text-bold pv-lg">People (4)</h4><br>
+              <ul class="list-unstyled">
+                <!-- START User-->
+                <li class="media">
+                  <div class="media-left media-middle">
+                    <!-- Contact avatar-->
+                    <div class="point-pin"><a href=""><img src="images/user/05.jpg" alt="Image" class="media-object img-circle thumb40"></a>
+                      <div class="point point-success point-lg"></div>
+                    </div>
+                  </div>
+                  <!-- Contact info-->
+                  <div class="media-body">
+                    <div class="media-heading"><a href="" class="text-md">Marc Fuller</a></div>
+                  </div>
+                </li>
+                <!-- END User-->
+                <!-- START User-->
+                <li>
+                  <hr>
+                </li>
+                <li class="media">
+                  <div class="media-left media-middle">
+                    <!-- Contact avatar-->
+                    <div class="point-pin"><a href=""><img src="images/user/06.jpg" alt="Image" class="media-object img-circle thumb40"></a>
+                      <div class="point point-success point-lg"></div>
+                    </div>
+                  </div>
+                  <!-- Contact info-->
+                  <div class="media-body">
+                    <div class="media-heading"><a href="" class="text-md">Wade Wade</a></div>
+                  </div>
+                </li>
+                <!-- END User-->
+                <!-- START User-->
+                <li>
+                  <hr>
+                </li>
+                <li class="media">
+                  <div class="media-left media-middle">
+                    <!-- Contact avatar-->
+                    <div class="point-pin"><a href=""><img src="images/user/07.jpg" alt="Image" class="media-object img-circle thumb40"></a>
+                      <div class="point point-danger point-lg"></div>
+                    </div>
+                  </div>
+                  <!-- Contact info-->
+                  <div class="media-body">
+                    <div class="media-heading"><a href="" class="text-md">Alan Boyd</a></div>
+                  </div>
+                </li>
+                <!-- END User-->
+                <!-- START User-->
+                <li>
+                  <hr>
+                </li>
+                <li class="media">
+                  <div class="media-left media-middle">
+                    <!-- Contact avatar-->
+                    <div class="point-pin"><a href=""><img src="images/user/01.jpg" alt="Image" class="media-object img-circle thumb40"></a>
+                      <div class="point point-danger point-lg"></div>
+                    </div>
+                  </div>
+                  <!-- Contact info-->
+                  <div class="media-body">
+                    <div class="media-heading"><a href="" class="text-md">Ryan Carr</a></div>
+                  </div>
+                </li>
+                <!-- END User-->
+              </ul>
+            </div>
+            <div class="col-md-4 col-sm-6 pv">
+              <h4 class="text-bold pv-lg">Pages (3)</h4><br>
+              <ul class="list-unstyled">
+                <li class="media">
+                  <div class="media-left media-middle">
+                    <div class="thumb40 bg-success circle text-center text-bold">D</div>
+                  </div>
+                  <div class="media-body">
+                    <div class="media-heading clearfix"><a href="dashboard.html" data-layer-morph-close="" class="pull-left text-md">Dashboard</a><small class="text-muted pull-right mt">3 matches</small></div>
+                  </div>
+                </li>
+                <li>
+                  <hr>
+                </li>
+                <li class="media">
+                  <div class="media-left media-middle">
+                    <div class="thumb40 bg-purple circle text-center text-bold">P</div>
+                  </div>
+                  <div class="media-body">
+                    <div class="media-heading clearfix"><a href="extras.profile.html" data-layer-morph-close="" class="pull-left text-md">Profile</a><small class="text-muted pull-right mt">3 matches</small></div>
+                  </div>
+                </li>
+                <li>
+                  <hr>
+                </li>
+                <li class="media">
+                  <div class="media-left media-middle">
+                    <div class="thumb40 bg-danger circle text-center text-bold">P</div>
+                  </div>
+                  <div class="media-body">
+                    <div class="media-heading clearfix"><a href="extras.projects.html" data-layer-morph-close="" class="pull-left text-md">Projects</a><small class="text-muted pull-right mt">2 match(es)</small></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="layer-morph-footer">Naut</div>
+      </div>
+    </div>
+    <!-- End Layer Morph-->
+    <script src="scripts/vendor.js"></script>
+    <script src="scripts/plugins.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

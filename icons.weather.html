@@ -1,0 +1,1185 @@
+<!DOCTYPE html><!--[if IE 9 ]>    <html class="ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en" class="no-js"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>Naut - Bootstrap Admin Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory-->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/vendor.css">
+    <script src="scripts/vendor/modernizr.js"></script>
+    <!-- GMaps api-->
+    <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true"></script>
+  </head>
+  <body>
+    <!-- Main container-->
+    <div class="app-container">
+      <!-- top navbar-->
+      <header class="bg-primary">
+        <!-- START Top Navbar-->
+        <nav role="navigation" class="navbar topnavbar">
+          <!-- START button offset-->
+          <div class="btn-offset">
+            <button type="button" data-btn-layer-morph="" data-target="#layer-search" data-ripple="" class="btn btn-info btn-circle btn-lg shadow-z1"><em class="fa fa-search"></em></button>
+          </div>
+          <!-- START button offset-->
+          <!-- START navbar header-->
+          <div class="navbar-header"><a href="dashboard.html" class="navbar-brand"> <img src="images/logo.png" alt="App Logo" class="brand-logo"></a>
+            <!-- Mobile buttons-->
+            <div class="mobile-toggles">
+              <!-- Button to show/hide the sidebar on mobile. Visible on mobile only.--><a href="" class="sidebar-toggle"><em class="fa fa-navicon"></em></a>
+              <!-- Button to show/hide the header menu on mobile. Visible on mobile only.--><a href="#nav-collapse" data-toggle="collapse" class="menu-toggle hidden-material"><em class="fa fa-ellipsis-v fa-fw"></em></a>
+            </div>
+          </div>
+          <!-- END navbar header-->
+          <!-- START Nav wrapper-->
+          <div id="nav-collapse" class="nav-wrapper collapse navbar-collapse">
+            <!-- START Left navbar-->
+            <ul class="nav navbar-nav hidden-material">
+              <li>
+                <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops--><a href="" class="hidden-xs sidebar-toggle-off"><em class="fa fa-navicon"></em></a>
+              </li>
+              <!-- START Apps menu-->
+              <li class="dropdown"><a href="" data-toggle="dropdown" data-ripple="" class="dropdown-toggle"><em class="fa fa-th fa-fw"></em><span class="visible-xs-inline ml">Applications</span></a>
+                <!-- START Dropdown menu-->
+                <ul id="bg-white" class="dropdown-menu p wd-lg">
+                  <li class="row ml0 mr0 mt mb text-center">
+                    <div class="col-xs-4">
+                      <div class="pv"><a href="extras.profile.html"><span class="block mb"><em class="icon-head fa-2x text-warning"></em></span><small class="text-muted">Profile</small></a></div>
+                    </div>
+                    <div class="col-xs-4">
+                      <div class="pv"><a href="mailbox.html"><span class="block mb"><em class="icon-mail fa-2x text-primary"></em></span><small class="text-muted">Mailbox</small></a></div>
+                    </div>
+                    <div class="col-xs-4">
+                      <div class="pv"><a href="extras.calendar.html"><span class="block mb"><em class="fa fa-calendar fa-2x text-danger"></em></span><small class="text-muted">Calendar</small></a></div>
+                    </div>
+                    <div class="col-xs-4">
+                      <div class="pv"><a href="maps.vector.html"><span class="block mb"><em class="icon-map fa-2x text-success"></em></span><small class="text-muted">Map</small></a></div>
+                    </div>
+                    <div class="col-xs-4">
+                      <div class="pv"><a href="dashboard.html"><span class="block mb"><em class="icon-bar-graph-2 fa-2x text-info"></em></span><small class="text-muted">Dashboard</small></a></div>
+                    </div>
+                    <div class="col-xs-4">
+                      <div class="pv"><a href="extras.gallery.html"><span class="block mb"><em class="icon-image fa-2x text-muted"></em></span><small class="text-muted">Gallery</small></a></div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <!-- END Apps menu-->
+              <!-- START lock screen-->
+              <li><a href="page.lock.html" title="Lock screen" data-ripple=""><em class="icon-lock fa-fw"></em><span class="visible-xs-inline ml">Lock Screen </span></a></li>
+              <!-- END lock screen-->
+            </ul>
+            <!-- END Left navbar-->
+          </div>
+          <!-- END Nav wrapper-->
+          
+          
+        </nav>
+        <!-- END Top Navbar-->
+      </header>
+      <!-- Sidebar-->
+      <aside class="bg-white">
+        <!-- START Sidebar-->
+        <div class="sidebar-wrapper">
+          <div data-ui-sidebar="" class="sidebar">
+            <div class="sidebar-nav">
+              <ul class="nav">
+                <!-- Iterates over all sidebar items-->
+                <li class="nav-heading"><span class="text-muted">Main Navigation</span></li>
+                <li><a href="dashboard.html" title="Dashboard" data-ripple="">
+                    <div class="label pull-right label-success">4</div><em class="sidebar-item-icon icon-pie-graph"></em><span>Dashboard</span></a></li>
+                <li><a href="cards.html" title="Cards" data-ripple=""><em class="sidebar-item-icon icon-stack"></em><span>Cards</span></a></li>
+                <li><a href="mailbox.html" title="Mailbox" data-ripple="">
+                    <div class="label pull-right label-success">12</div><em class="sidebar-item-icon icon-mail"></em><span>Mailbox</span></a></li>
+                <li><a href="" title="Layouts" data-ripple=""><em class="sidebar-item-caret fa pull-right fa-angle-right"></em><em class="sidebar-item-icon icon-layout"></em><span>Layouts</span></a>
+                  <ul class="nav sidebar-subnav">
+                    <li class="sidebar-subnav-header"><a><em class="sidebar-item-icon fa fa-angle-right"></em>Layouts</a></li>
+                    <li><a href="dashboard.docked.html" title="Docked" data-ripple=""><em class="sidebar-item-icon"></em><span>Docked</span></a></li>
+                    <li><a href="layout.columns.html" title="Full Height" data-ripple=""><em class="sidebar-item-icon"></em><span>Full Height</span></a></li>
+                  </ul>
+                </li>
+                <li>
+                  <hr>
+                </li>
+                <li><a href="" title="Components" data-ripple=""><em class="sidebar-item-caret fa pull-right fa-angle-right"></em><em class="sidebar-item-icon icon-box"></em><span>Components</span></a>
+                  <ul class="nav sidebar-subnav">
+                    <li class="sidebar-subnav-header"><a><em class="sidebar-item-icon fa fa-angle-right"></em>Components</a></li>
+                    <li><a href="ui.buttons.html" title="Buttons" data-ripple=""><em class="sidebar-item-icon"></em><span>Buttons</span></a></li>
+                    <li><a href="ui.notifications.html" title="Notifications" data-ripple=""><em class="sidebar-item-icon"></em><span>Notifications</span></a></li>
+                    <li><a href="ui.panels.html" title="Panels" data-ripple=""><em class="sidebar-item-icon"></em><span>Panels</span></a></li>
+                    <li>
+                      <hr>
+                    </li>
+                    <li><a href="ui.nestable.html" title="Nestable" data-ripple=""><em class="sidebar-item-icon"></em><span>Nestable</span></a></li>
+                    <li><a href="ui.sortable.html" title="Sortable" data-ripple=""><em class="sidebar-item-icon"></em><span>Sortable</span></a></li>
+                    <li><a href="ui.grid.html" title="Grid" data-ripple=""><em class="sidebar-item-icon"></em><span>Grid</span></a></li>
+                    <li><a href="ui.grid-masonry.html" title="Grid Masonry" data-ripple=""><em class="sidebar-item-icon"></em><span>Grid Masonry</span></a></li>
+                    <li><a href="ui.typo.html" title="Typography" data-ripple=""><em class="sidebar-item-icon"></em><span>Typography</span></a></li>
+                    <li><a href="ui.palette.html" title="Palette" data-ripple=""><em class="sidebar-item-icon"></em><span>Palette</span></a></li>
+                  </ul>
+                </li>
+                <li><a href="" title="Forms" data-ripple=""><em class="sidebar-item-caret fa pull-right fa-angle-right"></em><em class="sidebar-item-icon icon-book"></em><span>Forms</span></a>
+                  <ul class="nav sidebar-subnav">
+                    <li class="sidebar-subnav-header"><a><em class="sidebar-item-icon fa fa-angle-right"></em>Forms</a></li>
+                    <li><a href="form.inputs.html" title="Inputs" data-ripple=""><em class="sidebar-item-icon"></em><span>Inputs</span></a></li>
+                    <li><a href="form.validation.html" title="Validation" data-ripple=""><em class="sidebar-item-icon"></em><span>Validation</span></a></li>
+                    <li><a href="form.wizard.html" title="Wizard" data-ripple=""><em class="sidebar-item-icon"></em><span>Wizard</span></a></li>
+                    <li><a href="form.upload.html" title="Upload" data-ripple=""><em class="sidebar-item-icon"></em><span>Upload</span></a></li>
+                    <li><a href="form.xeditable.html" title="xEditable" data-ripple=""><em class="sidebar-item-icon"></em><span>xEditable</span></a></li>
+                    <li><a href="form.imagecrop.html" title="Image Crop" data-ripple=""><em class="sidebar-item-icon"></em><span>Image Crop</span></a></li>
+                  </ul>
+                </li>
+                <li><a href="" title="Tables" data-ripple=""><em class="sidebar-item-caret fa pull-right fa-angle-right"></em><em class="sidebar-item-icon icon-grid"></em><span>Tables</span></a>
+                  <ul class="nav sidebar-subnav">
+                    <li class="sidebar-subnav-header"><a><em class="sidebar-item-icon fa fa-angle-right"></em>Tables</a></li>
+                    <li><a href="table.responsive.html" title="Responsive" data-ripple=""><em class="sidebar-item-icon"></em><span>Responsive</span></a></li>
+                    <li><a href="table.datatables.html" title="Datables" data-ripple=""><em class="sidebar-item-icon"></em><span>Datables</span></a></li>
+                  </ul>
+                </li>
+                <li><a href="" title="Flot" data-ripple=""><em class="sidebar-item-caret fa pull-right fa-angle-right"></em><em class="sidebar-item-icon icon-bar-graph"></em><span>Charts</span></a>
+                  <ul class="nav sidebar-subnav">
+                    <li class="sidebar-subnav-header"><a><em class="sidebar-item-icon fa fa-angle-right"></em>Charts</a></li>
+                    <li><a href="charts.flot.html" title="Flot" data-ripple=""><em class="sidebar-item-icon"></em><span>Flot</span></a></li>
+                    <li><a href="charts.pie.html" title="Pie Charts" data-ripple=""><em class="sidebar-item-icon"></em><span>Pie</span></a></li>
+                  </ul>
+                </li>
+                <li><a href="" title="Maps" data-ripple=""><em class="sidebar-item-caret fa pull-right fa-angle-right"></em><em class="sidebar-item-icon icon-map"></em><span>Maps</span></a>
+                  <ul class="nav sidebar-subnav">
+                    <li class="sidebar-subnav-header"><a><em class="sidebar-item-icon fa fa-angle-right"></em>Maps</a></li>
+                    <li><a href="maps.google.html" title="Google Maps" data-ripple=""><em class="sidebar-item-icon"></em><span>Google Maps</span></a></li>
+                    <li><a href="maps.vector.html" title="Vector Maps" data-ripple=""><em class="sidebar-item-icon"></em><span>Vector Maps</span></a></li>
+                  </ul>
+                </li>
+                <li><a href="" title="Icons" data-ripple=""><em class="sidebar-item-caret fa pull-right fa-angle-right"></em><em class="sidebar-item-icon icon-play"></em><span>Icons</span></a>
+                  <ul class="nav sidebar-subnav">
+                    <li class="sidebar-subnav-header"><a><em class="sidebar-item-icon fa fa-angle-right"></em>Icons</a></li>
+                    <li><a href="icons.feather.html" title="Feather Icons" data-ripple=""><em class="sidebar-item-icon"></em><span>Feather Icons</span></a></li>
+                    <li><a href="icons.fa.html" title="Font Awesome" data-ripple=""><em class="sidebar-item-icon"></em><span>Font Awesome</span></a></li>
+                    <li><a href="icons.climacon.html" title="Climacons" data-ripple=""><em class="sidebar-item-icon"></em><span>Climacons</span></a></li>
+                    <li><a href="icons.weather.html" title="Weather Icons" data-ripple=""><em class="sidebar-item-icon"></em><span>Weather Icons</span></a></li>
+                  </ul>
+                </li>
+                <li>
+                  <hr>
+                </li>
+                <li class="nav-heading"><span class="text-muted">Extras</span></li>
+                <li><a href="" title="Extras" data-ripple=""><em class="sidebar-item-caret fa pull-right fa-angle-right"></em><em class="sidebar-item-icon icon-ribbon"></em><span>Extras</span></a>
+                  <ul class="nav sidebar-subnav">
+                    <li class="sidebar-subnav-header"><a><em class="sidebar-item-icon fa fa-angle-right"></em>Extras</a></li>
+                    <li><a href="extras.calendar.html" title="Calendar" data-ripple=""><em class="sidebar-item-icon"></em><span>Calendar</span></a></li>
+                    <li><a href="extras.tasks.html" title="Tasks List" data-ripple=""><em class="sidebar-item-icon"></em><span>Tasks List</span></a></li>
+                    <li><a href="extras.chat.html" title="Chat" data-ripple=""><em class="sidebar-item-icon"></em><span>Chat</span></a></li>
+                    <li>
+                      <hr>
+                    </li>
+                    <li><a href="extras.invoice.html" title="Invoice" data-ripple=""><em class="sidebar-item-icon"></em><span>Invoice</span></a></li>
+                    <li><a href="extras.price-table.html" title="Price" data-ripple=""><em class="sidebar-item-icon"></em><span>Price</span></a></li>
+                    <li><a href="extras.search.html" title="Search" data-ripple=""><em class="sidebar-item-icon"></em><span>Search</span></a></li>
+                    <li><a href="extras.timeline.html" title="Timeline" data-ripple=""><em class="sidebar-item-icon"></em><span>Timeline</span></a></li>
+                    <li><a href="extras.projects.html" title="Projects" data-ripple=""><em class="sidebar-item-icon"></em><span>Projects</span></a></li>
+                    <li><a href="extras.gallery.html" title="Gallery" data-ripple=""><em class="sidebar-item-icon"></em><span>Gallery</span></a></li>
+                    <li><a href="extras.profile.html" title="Profile" data-ripple=""><em class="sidebar-item-icon"></em><span>Profile</span></a></li>
+                    <li><a href="extras.template.html" title="Template" data-ripple=""><em class="sidebar-item-icon"></em><span>Template</span></a></li>
+                  </ul>
+                </li>
+                <li><a href="" title="Pages" data-ripple=""><em class="sidebar-item-caret fa pull-right fa-angle-right"></em><em class="sidebar-item-icon icon-stack"></em><span>Pages</span></a>
+                  <ul class="nav sidebar-subnav">
+                    <li class="sidebar-subnav-header"><a><em class="sidebar-item-icon fa fa-angle-right"></em>Pages</a></li>
+                    <li><a href="page.login.html" title="Login" data-ripple=""><em class="sidebar-item-icon"></em><span>Login</span></a></li>
+                    <li><a href="page.register.html" title="Sign up" data-ripple=""><em class="sidebar-item-icon"></em><span>Sign up</span></a></li>
+                    <li><a href="page.recover.html" title="Recover Password" data-ripple=""><em class="sidebar-item-icon"></em><span>Recover Password</span></a></li>
+                    <li><a href="page.lock.html" title="Lock" data-ripple=""><em class="sidebar-item-icon"></em><span>Lock</span></a></li>
+                  </ul>
+                </li>
+                <li><a href="../../angularjs" title="Static" ripple="" class="bg-danger"><em class="text-white sidebar-item-icon fa fa-shield"></em><span class="text-white">AngularJS Version</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- END Sidebar-->
+      </aside>
+      <!-- Main-->
+      <section>
+        <!-- Content-->
+        <div class="app">
+          <div class="app-view-header">Weather Icons<small>Weather icons ready to be dropped right into your project. </small></div>
+          <div class="row">
+            <div class="col-sm-12">
+              <h4>New v1.3 Icons</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-umbrella">          </em></div><code>wi-umbrella           </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-day-windy">         </em></div><code>wi-day-windy          </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-alt-cloudy"></em></div><code>wi-night-alt-cloudy</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-up-left">        </em></div><code>wi-up-left         </code>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-down-right">     </em></div><code>wi-down-right      </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-day-sleet">         </em></div><code>wi-day-sleet          </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-sleet">       </em></div><code>wi-night-sleet        </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-alt-sleet">   </em></div><code>wi-night-alt-sleet    </code>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-sleet">             </em></div><code>wi-sleet              </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-day-haze">          </em></div><code>wi-day-haze        </code>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <h3>Moon Phases </h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-moon-new">            </em></div><code>wi-moon-new                  </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-moon-waxing-cresent-1"></em></div><code>wi-moon-waxing-cresent-1     </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-moon-waxing-cresent-2"></em></div><code>wi-moon-waxing-cresent-2     </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-moon-waxing-cresent-3"></em></div><code>wi-moon-waxing-cresent-3     </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-moon-waxing-cresent-4"></em></div><code>wi-moon-waxing-cresent-4     </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-moon-waxing-cresent-5"></em></div><code>wi-moon-waxing-cresent-5     </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-moon-waxing-cresent-6"></em></div><code>wi-moon-waxing-cresent-6     </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-moon-first-quarter">  </em></div><code>wi-moon-first-quarter        </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-moon-waxing-gibbous-1"></em></div><code>wi-moon-waxing-gibbous-1     </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-moon-waxing-gibbous-2"></em></div><code>wi-moon-waxing-gibbous-2     </code>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-moon-waxing-gibbous-3"></em></div><code>wi-moon-waxing-gibbous-3     </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-moon-waxing-gibbous-4"></em></div><code>wi-moon-waxing-gibbous-4     </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-moon-waxing-gibbous-5"></em></div><code>wi-moon-waxing-gibbous-5     </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-moon-waxing-gibbous-6"></em></div><code>wi-moon-waxing-gibbous-6     </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-moon-full">           </em></div><code>wi-moon-full                 </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-moon-waning-gibbous-1"></em></div><code>wi-moon-waning-gibbous-1     </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-moon-waning-gibbous-2"></em></div><code>wi-moon-waning-gibbous-2     </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-moon-waning-gibbous-3"></em></div><code>wi-moon-waning-gibbous-3     </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-moon-waning-gibbous-4"></em></div><code>wi-moon-waning-gibbous-4     </code>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-moon-waning-gibbous-5"></em></div><code>wi-moon-waning-gibbous-5     </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-moon-waning-gibbous-6"></em></div><code>wi-moon-waning-gibbous-6     </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-moon-3rd-quarter">    </em></div><code>wi-moon-3rd-quarter          </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-moon-waning-crescent-1"></em></div><code>wi-moon-waning-crescent-1     </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-moon-waning-crescent-2"></em></div><code>wi-moon-waning-crescent-2     </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-moon-waning-crescent-3"></em></div><code>wi-moon-waning-crescent-3     </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-moon-waning-crescent-4"></em></div><code>wi-moon-waning-crescent-4     </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-moon-waning-crescent-5"></em></div><code>wi-moon-waning-crescent-5     </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-moon-waning-crescent-6"></em></div><code>wi-moon-waning-crescent-6     </code>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <h3>Clocks</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-time-12">        </em></div><code>wi-time-12         </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-time-1">         </em></div><code>wi-time-1          </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-time-2">         </em></div><code>wi-time-2          </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-time-3">         </em></div><code>wi-time-3          </code>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-time-4">         </em></div><code>wi-time-4          </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-time-5">         </em></div><code>wi-time-5          </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-time-6">         </em></div><code>wi-time-6          </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-time-7">         </em></div><code>wi-time-7          </code>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-time-8">         </em></div><code>wi-time-8          </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-time-9">         </em></div><code>wi-time-9          </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-time-10">        </em></div><code>wi-time-10         </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-time-11">        </em></div><code>wi-time-11         </code>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <h3>Beaufort Wind Scale</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-beafort-0">         </em></div><code>wi-beafort-0          </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-beafort-1">         </em></div><code>wi-beafort-1          </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-beafort-2">         </em></div><code>wi-beafort-2          </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-beafort-3">         </em></div><code>wi-beafort-3          </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-beafort-4">         </em></div><code>wi-beafort-4          </code>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-beafort-5">         </em></div><code>wi-beafort-5          </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-beafort-6">         </em></div><code>wi-beafort-6          </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-beafort-7">         </em></div><code>wi-beafort-7          </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-beafort-8">         </em></div><code>wi-beafort-8          </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-beafort-9">         </em></div><code>wi-beafort-9          </code>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-beafort-10">        </em></div><code>wi-beafort-10         </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-beafort-11">        </em></div><code>wi-beafort-11         </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-beafort-12">        </em></div><code>wi-beafort-12         </code>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <h3>Wind Directions - 0 degrees through 345 degrees</h3>
+              <p>Wind direction icons use CSS3 tranform to rotate. Choose your interpretation; point to the wind source, or point in the wind direction. Example: pointing to an east wind would be wi-wind-default _90-deg, but pointing in the direction of an east wind would be wi-wind-default _270deg. This should give everyone the felxibility they need without having alias names or 24 separate glyphs.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-wind-default _0-deg"></em></div><code>wi-wind-default _0-deg</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-wind-default _15-deg"></em></div><code>wi-wind-default _15-deg</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-wind-default _30-deg"></em></div><code>wi-wind-default _30-deg</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-wind-default _45-deg"></em></div><code>wi-wind-default _45-deg</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-wind-default _60-deg"></em></div><code>wi-wind-default _60-deg</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-wind-default _75-deg"></em></div><code>wi-wind-default _75-deg</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-wind-default _90-deg"></em></div><code>wi-wind-default _90-deg</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-wind-default _105-deg"></em></div><code>wi-wind-default _105-deg</code>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-wind-default _120-deg"></em></div><code>wi-wind-default _120-deg</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-wind-default _135-deg"></em></div><code>wi-wind-default _135-deg</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-wind-default _150-deg"></em></div><code>wi-wind-default _150-deg</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-wind-default _165-deg"></em></div><code>wi-wind-default _165-deg</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-wind-default _180-deg"></em></div><code>wi-wind-default _180-deg</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-wind-default _195-deg"></em></div><code>wi-wind-default _195-deg</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-wind-default _210-deg"></em></div><code>wi-wind-default _210-deg</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-wind-default _225-deg"></em></div><code>wi-wind-default _225-deg</code>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-wind-default _240-deg"></em></div><code>wi-wind-default _240-deg</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-wind-default _255-deg"></em></div><code>wi-wind-default _255-deg</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-wind-default _270-deg"></em></div><code>wi-wind-default _270-deg</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-wind-default _285-deg"></em></div><code>wi-wind-default _285-deg</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-wind-default _300-deg"></em></div><code>wi-wind-default _300-deg</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-wind-default _315-deg"></em></div><code>wi-wind-default _315-deg</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-wind-default _330-deg"></em></div><code>wi-wind-default _330-deg</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-wind-default _345-deg"></em></div><code>wi-wind-default _345-deg</code>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <h4>New v1.2 </h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-smoke"></em></div><code>wi-smoke</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-dust"></em></div><code>wi-dust</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-snow-wind"></em></div><code>wi-snow-wind</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-day-snow-wind"></em></div><code>wi-day-snow-wind</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-snow-wind"></em></div><code>wi-night-snow-wind</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-alt-snow-wind"></em></div><code>wi-night-alt-snow-wind</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-day-sleet-storm"></em></div><code>wi-day-sleet-storm</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-sleet-storm"></em></div><code>wi-night-sleet-storm</code>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-alt-sleet-storm"></em></div><code>wi-night-alt-sleet-storm</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-day-snow-thunderstorm"></em></div><code>wi-day-snow-thunderstorm</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-snow-thunderstorm"></em></div><code>wi-night-snow-thunderstorm</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-alt-snow-thunderstorm"></em></div><code>wi-night-alt-snow-thunderstorm</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-solar-eclipse"></em></div><code>wi-solar-eclipse</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-lunar-eclipse"></em></div><code>wi-lunar-eclipse</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-meteor"></em></div><code>wi-meteor</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-hot"></em></div><code>wi-hot</code>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-hurricane"></em></div><code>wi-hurricane          </code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-smog"></em></div><code>wi-smog</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-alien"></em></div><code>wi-alien</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-snowflake-cold"></em></div><code>wi-snowflake-cold</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-stars"></em></div><code>wi-stars</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-partly-cloudy"></em></div><code>night-partly-cloudy</code>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <h4>Day / Sunny</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-day-cloudy-gusts"></em></div><code>wi-day-cloudy-gusts</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-day-cloudy-windy"></em></div><code>wi-day-cloudy-windy</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-day-cloudy"></em></div><code>wi-day-cloudy</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-day-fog"></em></div><code>wi-day-fog</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-day-hail"></em></div><code>wi-day-hail</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-day-lightning"></em></div><code>wi-day-lightning</code>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-day-rain-mix"></em></div><code>wi-day-rain-mix</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-day-rain-wind"></em></div><code>wi-day-rain-wind</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-day-rain"></em></div><code>wi-day-rain</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-day-showers"></em></div><code>wi-day-showers</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-day-snow"></em></div><code>wi-day-snow</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-day-sprinkle"></em></div><code>wi-day-sprinkle</code>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-day-sunny-overcast"></em></div><code>wi-day-sunny-overcast</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-day-sunny"></em></div><code>wi-day-sunny</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-day-storm-showers"></em></div><code>wi-day-storm-showers</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-day-thunderstorm"></em></div><code>wi-day-thunderstorm</code>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <h4>Neutral / Cloudy</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-cloudy-gusts"></em></div><code>wi-cloudy-gusts</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-cloudy-windy"></em></div><code>wi-cloudy-windy</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-cloudy"></em></div><code>wi-cloudy</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-fog"></em></div><code>wi-fog</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-hail"></em></div><code>wi-hail</code>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-lightning"></em></div><code>wi-lightning</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-rain-mix"></em></div><code>wi-rain-mix</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-rain-wind"></em></div><code>wi-rain-wind</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-rain"></em></div><code>wi-rain</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-showers"></em></div><code>wi-showers</code>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-snow"></em></div><code>wi-snow</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-sprinkle"></em></div><code>wi-sprinkle</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-storm-showers"></em></div><code>wi-storm-showers</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-thunderstorm"></em></div><code>wi-thunderstorm</code>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <h4>Night / Moons</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-alt-cloudy-gusts"></em></div><code>wi-night-alt-cloudy-gusts</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-alt-cloudy-windy"></em></div><code>wi-night-alt-cloudy-windy</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-alt-hail"></em></div><code>wi-night-alt-hail</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-alt-lightning"></em></div><code>wi-night-alt-lightning</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-alt-rain-mix"></em></div><code>wi-night-alt-rain-mix</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-alt-rain-wind"></em></div><code>wi-night-alt-rain-wind</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-alt-rain"></em></div><code>wi-night-alt-rain</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-alt-showers"></em></div><code>wi-night-alt-showers</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-alt-snow"></em></div><code>wi-night-alt-snow</code>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-alt-sprinkle"></em></div><code>wi-night-alt-sprinkle</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-alt-storm-showers"></em></div><code>wi-night-alt-storm-showers</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-alt-thunderstorm"></em></div><code>wi-night-alt-thunderstorm</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-clear"></em></div><code>wi-night-clear</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-cloudy-gusts"></em></div><code>wi-night-cloudy-gusts</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-cloudy-windy"></em></div><code>wi-night-cloudy-windy</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-cloudy"></em></div><code>wi-night-cloudy</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-hail"></em></div><code>wi-night-hail</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-lightning"></em></div><code>wi-night-lightning</code>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-rain-mix"></em></div><code>wi-night-rain-mix</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-rain-wind"></em></div><code>wi-night-rain-wind</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-rain"></em></div><code>wi-night-rain</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-showers"></em></div><code>wi-night-showers</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-snow"></em></div><code>wi-night-snow</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-sprinkle"></em></div><code>wi-night-sprinkle</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-storm-showers"></em></div><code>wi-night-storm-showers</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-thunderstorm"></em></div><code>wi-night-thunderstorm</code>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <h4>Miscellaneous Weather </h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-celsius"></em></div><code>wi-celsius</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-cloud-down"></em></div><code>wi-cloud-down</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-cloud-refresh"></em></div><code>wi-cloud-refresh</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-cloud-up"></em></div><code>wi-cloud-up</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-cloud"></em></div><code>wi-cloud</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-degrees"></em></div><code>wi-degrees</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-down-left"></em></div><code>wi-down-left</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-down"></em></div><code>wi-down</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-fahrenheit"></em></div><code>wi-fahrenheit</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-horizon-alt"></em></div><code>wi-horizon-alt</code>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-horizon"></em></div><code>wi-horizon</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-left"></em></div><code>wi-left</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-lightning"></em></div><code>wi-lightning</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-night-fog"></em></div><code>wi-night-fog</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-refresh-alt"></em></div><code>wi-refresh-alt</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-refresh"></em></div><code>wi-refresh</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-right"></em></div><code>wi-right</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-sprinkles"></em></div><code>wi-sprinkles</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-strong-wind"></em></div><code>wi-strong-wind</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-sunrise"></em></div><code>wi-sunrise</code>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-sunset"></em></div><code>wi-sunset</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-thermometer-exterior"></em></div><code>wi-thermometer-exterior</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-thermometer-internal"></em></div><code>wi-thermometer-internal</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-thermometer"></em></div><code>wi-thermometer</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-tornado"></em></div><code>wi-tornado</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-up-right"></em></div><code>wi-up-right</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-up"></em></div><code>wi-up</code>
+              </div>
+              <div class="text-center mb">
+                <div class="text-md mr"><em class="wi wi-windy"></em></div><code>wi-windy</code>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Page footer-->
+      <footer><span>&copy; 2015 - Application Name</span></footer>
+    </div>
+    <!-- Settings-->
+    <div class="settings-wrapper">
+      <div class="settings-inner">
+        <div class="settings-button"><em class="icon-cog"></em></div>
+        <div class="settings">
+          <div class="settings-inner">
+            <div class="settings-content">
+              <div class="pt ph">
+                <p class="text-muted">THEMES</p>
+                <div class="clearfix mb">
+                  <div class="pull-left wd-tiny mb">
+                    <div class="setting-color">
+                      <label>
+                        <input type="radio" name="setting-theme" value="0"><span class="icon-check"></span><span class="list-table"><span class="bg-white"></span><span class="bg-primary"></span><span class="bg-primary"></span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="pull-left wd-tiny mb">
+                    <div class="setting-color">
+                      <label>
+                        <input type="radio" name="setting-theme" value="1"><span class="icon-check"></span><span class="list-table"><span class="bg-white"></span><span class="bg-purple"></span><span class="bg-purple"></span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="pull-left wd-tiny mb">
+                    <div class="setting-color">
+                      <label>
+                        <input type="radio" name="setting-theme" value="2"><span class="icon-check"></span><span class="list-table"><span class="bg-white"></span><span class="bg-success"></span><span class="bg-success"></span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="pull-left wd-tiny mb">
+                    <div class="setting-color">
+                      <label>
+                        <input type="radio" name="setting-theme" value="3"><span class="icon-check"></span><span class="list-table"><span class="bg-white"></span><span class="bg-warning"></span><span class="bg-warning"></span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="pull-left wd-tiny mb">
+                    <div class="setting-color">
+                      <label>
+                        <input type="radio" name="setting-theme" value="4"><span class="icon-check"></span><span class="list-table"><span class="bg-white"></span><span class="bg-info"></span><span class="bg-info"></span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="pull-left wd-tiny mb">
+                    <div class="setting-color">
+                      <label>
+                        <input type="radio" name="setting-theme" value="5"><span class="icon-check"></span><span class="list-table"><span class="bg-white"></span><span class="bg-danger"></span><span class="bg-danger"></span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="pull-left wd-tiny mb">
+                    <div class="setting-color">
+                      <label>
+                        <input type="radio" name="setting-theme" value="6"><span class="icon-check"></span><span class="list-table"><span class="bg-white"></span><span class="bg-pink"></span><span class="bg-pink"></span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="pull-left wd-tiny mb">
+                    <div class="setting-color">
+                      <label>
+                        <input type="radio" name="setting-theme" value="7"><span class="icon-check"></span><span class="list-table"><span class="bg-white"></span><span class="bg-amber"></span><span class="bg-amber"></span></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="p">
+                <p class="text-muted">LAYOUT</p>
+                <div class="clearfix">
+                  <p class="pull-left">Fixed</p>
+                  <div class="pull-right">
+                    <label class="switch switch-info">
+                      <input id="layoutisfixed" type="checkbox"><span></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="clearfix">
+                  <p class="pull-left">Boxed</p>
+                  <div class="pull-right">
+                    <label class="switch switch-info">
+                      <input id="layoutisboxed" type="checkbox"><span></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="clearfix">
+                  <p class="pull-left">Material</p>
+                  <div class="pull-right">
+                    <label class="switch switch-info">
+                      <input id="layoutismaterial" type="checkbox"><span></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="p">
+                <p class="text-muted">SIDEBAR</p>
+                <div class="clearfix">
+                  <p class="pull-left">Mini</p>
+                  <div class="pull-right">
+                    <label class="switch switch-info">
+                      <input id="sidebarismini" type="checkbox"><span></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="clearfix">
+                  <p class="pull-left">Right</p>
+                  <div class="pull-right">
+                    <label class="switch switch-info">
+                      <input id="sidebarisright" type="checkbox"><span></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="p">
+                <p class="text-muted">FOOTER</p>
+                <div class="clearfix">
+                  <p class="pull-left">Hidden</p>
+                  <div class="pull-right">
+                    <label class="switch switch-info">
+                      <input id="footerhidden" type="checkbox"><span></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Settings-->
+    <!-- Layer Morph-->
+    <div class="layer-morph-overlay">
+      <div class="layer-morph-inner bg-info"></div>
+    </div>
+    <div class="layer-morph-close"><em class="icon-cross"></em></div>
+    <div class="layer-morph-container bg-info">
+      <div class="layer-morph-wrapper">
+        <div id="layer-search" class="layer-morph">
+          <form action="#">
+            <p class="help-block">Type and hit enter to search</p>
+            <input type="text" placeholder="I'm looking for..." class="form-control input-huge">
+            <button type="submit" class="hidden">Search</button>
+          </form>
+          <div class="row">
+            <div class="col-md-4 col-sm-6 pv">
+              <h4 class="text-bold pv-lg">People (4)</h4><br>
+              <ul class="list-unstyled">
+                <!-- START User-->
+                <li class="media">
+                  <div class="media-left media-middle">
+                    <!-- Contact avatar-->
+                    <div class="point-pin"><a href=""><img src="images/user/05.jpg" alt="Image" class="media-object img-circle thumb40"></a>
+                      <div class="point point-success point-lg"></div>
+                    </div>
+                  </div>
+                  <!-- Contact info-->
+                  <div class="media-body">
+                    <div class="media-heading"><a href="" class="text-md">Marc Fuller</a></div>
+                  </div>
+                </li>
+                <!-- END User-->
+                <!-- START User-->
+                <li>
+                  <hr>
+                </li>
+                <li class="media">
+                  <div class="media-left media-middle">
+                    <!-- Contact avatar-->
+                    <div class="point-pin"><a href=""><img src="images/user/06.jpg" alt="Image" class="media-object img-circle thumb40"></a>
+                      <div class="point point-success point-lg"></div>
+                    </div>
+                  </div>
+                  <!-- Contact info-->
+                  <div class="media-body">
+                    <div class="media-heading"><a href="" class="text-md">Wade Wade</a></div>
+                  </div>
+                </li>
+                <!-- END User-->
+                <!-- START User-->
+                <li>
+                  <hr>
+                </li>
+                <li class="media">
+                  <div class="media-left media-middle">
+                    <!-- Contact avatar-->
+                    <div class="point-pin"><a href=""><img src="images/user/07.jpg" alt="Image" class="media-object img-circle thumb40"></a>
+                      <div class="point point-danger point-lg"></div>
+                    </div>
+                  </div>
+                  <!-- Contact info-->
+                  <div class="media-body">
+                    <div class="media-heading"><a href="" class="text-md">Alan Boyd</a></div>
+                  </div>
+                </li>
+                <!-- END User-->
+                <!-- START User-->
+                <li>
+                  <hr>
+                </li>
+                <li class="media">
+                  <div class="media-left media-middle">
+                    <!-- Contact avatar-->
+                    <div class="point-pin"><a href=""><img src="images/user/01.jpg" alt="Image" class="media-object img-circle thumb40"></a>
+                      <div class="point point-danger point-lg"></div>
+                    </div>
+                  </div>
+                  <!-- Contact info-->
+                  <div class="media-body">
+                    <div class="media-heading"><a href="" class="text-md">Ryan Carr</a></div>
+                  </div>
+                </li>
+                <!-- END User-->
+              </ul>
+            </div>
+            <div class="col-md-4 col-sm-6 pv">
+              <h4 class="text-bold pv-lg">Pages (3)</h4><br>
+              <ul class="list-unstyled">
+                <li class="media">
+                  <div class="media-left media-middle">
+                    <div class="thumb40 bg-success circle text-center text-bold">D</div>
+                  </div>
+                  <div class="media-body">
+                    <div class="media-heading clearfix"><a href="dashboard.html" data-layer-morph-close="" class="pull-left text-md">Dashboard</a><small class="text-muted pull-right mt">3 matches</small></div>
+                  </div>
+                </li>
+                <li>
+                  <hr>
+                </li>
+                <li class="media">
+                  <div class="media-left media-middle">
+                    <div class="thumb40 bg-purple circle text-center text-bold">P</div>
+                  </div>
+                  <div class="media-body">
+                    <div class="media-heading clearfix"><a href="extras.profile.html" data-layer-morph-close="" class="pull-left text-md">Profile</a><small class="text-muted pull-right mt">3 matches</small></div>
+                  </div>
+                </li>
+                <li>
+                  <hr>
+                </li>
+                <li class="media">
+                  <div class="media-left media-middle">
+                    <div class="thumb40 bg-danger circle text-center text-bold">P</div>
+                  </div>
+                  <div class="media-body">
+                    <div class="media-heading clearfix"><a href="extras.projects.html" data-layer-morph-close="" class="pull-left text-md">Projects</a><small class="text-muted pull-right mt">2 match(es)</small></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="layer-morph-footer">Naut</div>
+      </div>
+    </div>
+    <!-- End Layer Morph-->
+    <script src="scripts/vendor.js"></script>
+    <script src="scripts/plugins.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

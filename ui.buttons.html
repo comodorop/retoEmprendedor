@@ -1,0 +1,1514 @@
+<!DOCTYPE html><!--[if IE 9 ]>    <html class="ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en" class="no-js"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>Naut - Bootstrap Admin Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory-->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/vendor.css">
+    <script src="scripts/vendor/modernizr.js"></script>
+    <!-- GMaps api-->
+    <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true"></script>
+  </head>
+  <body>
+    <!-- Main container-->
+    <div class="app-container">
+      <!-- top navbar-->
+      <header class="bg-primary">
+        <!-- START Top Navbar-->
+        <nav role="navigation" class="navbar topnavbar">
+          <!-- START button offset-->
+          <div class="btn-offset">
+            <button type="button" data-btn-layer-morph="" data-target="#layer-search" data-ripple="" class="btn btn-info btn-circle btn-lg shadow-z1"><em class="fa fa-search"></em></button>
+          </div>
+          <!-- START button offset-->
+          <!-- START navbar header-->
+          <div class="navbar-header"><a href="dashboard.html" class="navbar-brand"> <img src="images/logo.png" alt="App Logo" class="brand-logo"></a>
+            <!-- Mobile buttons-->
+            <div class="mobile-toggles">
+              <!-- Button to show/hide the sidebar on mobile. Visible on mobile only.--><a href="" class="sidebar-toggle"><em class="fa fa-navicon"></em></a>
+              <!-- Button to show/hide the header menu on mobile. Visible on mobile only.--><a href="#nav-collapse" data-toggle="collapse" class="menu-toggle hidden-material"><em class="fa fa-ellipsis-v fa-fw"></em></a>
+            </div>
+          </div>
+          <!-- END navbar header-->
+          <!-- START Nav wrapper-->
+          <div id="nav-collapse" class="nav-wrapper collapse navbar-collapse">
+            <!-- START Left navbar-->
+            <ul class="nav navbar-nav hidden-material">
+              <li>
+                <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops--><a href="" class="hidden-xs sidebar-toggle-off"><em class="fa fa-navicon"></em></a>
+              </li>
+              <!-- START Apps menu-->
+              <li class="dropdown"><a href="" data-toggle="dropdown" data-ripple="" class="dropdown-toggle"><em class="fa fa-th fa-fw"></em><span class="visible-xs-inline ml">Applications</span></a>
+                <!-- START Dropdown menu-->
+                <ul id="bg-white" class="dropdown-menu p wd-lg">
+                  <li class="row ml0 mr0 mt mb text-center">
+                    <div class="col-xs-4">
+                      <div class="pv"><a href="extras.profile.html"><span class="block mb"><em class="icon-head fa-2x text-warning"></em></span><small class="text-muted">Profile</small></a></div>
+                    </div>
+                    <div class="col-xs-4">
+                      <div class="pv"><a href="mailbox.html"><span class="block mb"><em class="icon-mail fa-2x text-primary"></em></span><small class="text-muted">Mailbox</small></a></div>
+                    </div>
+                    <div class="col-xs-4">
+                      <div class="pv"><a href="extras.calendar.html"><span class="block mb"><em class="fa fa-calendar fa-2x text-danger"></em></span><small class="text-muted">Calendar</small></a></div>
+                    </div>
+                    <div class="col-xs-4">
+                      <div class="pv"><a href="maps.vector.html"><span class="block mb"><em class="icon-map fa-2x text-success"></em></span><small class="text-muted">Map</small></a></div>
+                    </div>
+                    <div class="col-xs-4">
+                      <div class="pv"><a href="dashboard.html"><span class="block mb"><em class="icon-bar-graph-2 fa-2x text-info"></em></span><small class="text-muted">Dashboard</small></a></div>
+                    </div>
+                    <div class="col-xs-4">
+                      <div class="pv"><a href="extras.gallery.html"><span class="block mb"><em class="icon-image fa-2x text-muted"></em></span><small class="text-muted">Gallery</small></a></div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <!-- END Apps menu-->
+              <!-- START lock screen-->
+              <li><a href="page.lock.html" title="Lock screen" data-ripple=""><em class="icon-lock fa-fw"></em><span class="visible-xs-inline ml">Lock Screen </span></a></li>
+              <!-- END lock screen-->
+            </ul>
+            <!-- END Left navbar-->
+          </div>
+          <!-- END Nav wrapper-->
+          
+          
+        </nav>
+        <!-- END Top Navbar-->
+      </header>
+      <!-- Sidebar-->
+      <aside class="bg-white">
+        <!-- START Sidebar-->
+        <div class="sidebar-wrapper">
+          <div data-ui-sidebar="" class="sidebar">
+            <div class="sidebar-nav">
+              <ul class="nav">
+                <!-- Iterates over all sidebar items-->
+                <li class="nav-heading"><span class="text-muted">Main Navigation</span></li>
+                <li><a href="dashboard.html" title="Dashboard" data-ripple="">
+                    <div class="label pull-right label-success">4</div><em class="sidebar-item-icon icon-pie-graph"></em><span>Dashboard</span></a></li>
+                <li><a href="cards.html" title="Cards" data-ripple=""><em class="sidebar-item-icon icon-stack"></em><span>Cards</span></a></li>
+                <li><a href="mailbox.html" title="Mailbox" data-ripple="">
+                    <div class="label pull-right label-success">12</div><em class="sidebar-item-icon icon-mail"></em><span>Mailbox</span></a></li>
+                <li><a href="" title="Layouts" data-ripple=""><em class="sidebar-item-caret fa pull-right fa-angle-right"></em><em class="sidebar-item-icon icon-layout"></em><span>Layouts</span></a>
+                  <ul class="nav sidebar-subnav">
+                    <li class="sidebar-subnav-header"><a><em class="sidebar-item-icon fa fa-angle-right"></em>Layouts</a></li>
+                    <li><a href="dashboard.docked.html" title="Docked" data-ripple=""><em class="sidebar-item-icon"></em><span>Docked</span></a></li>
+                    <li><a href="layout.columns.html" title="Full Height" data-ripple=""><em class="sidebar-item-icon"></em><span>Full Height</span></a></li>
+                  </ul>
+                </li>
+                <li>
+                  <hr>
+                </li>
+                <li><a href="" title="Components" data-ripple=""><em class="sidebar-item-caret fa pull-right fa-angle-right"></em><em class="sidebar-item-icon icon-box"></em><span>Components</span></a>
+                  <ul class="nav sidebar-subnav">
+                    <li class="sidebar-subnav-header"><a><em class="sidebar-item-icon fa fa-angle-right"></em>Components</a></li>
+                    <li><a href="ui.buttons.html" title="Buttons" data-ripple=""><em class="sidebar-item-icon"></em><span>Buttons</span></a></li>
+                    <li><a href="ui.notifications.html" title="Notifications" data-ripple=""><em class="sidebar-item-icon"></em><span>Notifications</span></a></li>
+                    <li><a href="ui.panels.html" title="Panels" data-ripple=""><em class="sidebar-item-icon"></em><span>Panels</span></a></li>
+                    <li>
+                      <hr>
+                    </li>
+                    <li><a href="ui.nestable.html" title="Nestable" data-ripple=""><em class="sidebar-item-icon"></em><span>Nestable</span></a></li>
+                    <li><a href="ui.sortable.html" title="Sortable" data-ripple=""><em class="sidebar-item-icon"></em><span>Sortable</span></a></li>
+                    <li><a href="ui.grid.html" title="Grid" data-ripple=""><em class="sidebar-item-icon"></em><span>Grid</span></a></li>
+                    <li><a href="ui.grid-masonry.html" title="Grid Masonry" data-ripple=""><em class="sidebar-item-icon"></em><span>Grid Masonry</span></a></li>
+                    <li><a href="ui.typo.html" title="Typography" data-ripple=""><em class="sidebar-item-icon"></em><span>Typography</span></a></li>
+                    <li><a href="ui.palette.html" title="Palette" data-ripple=""><em class="sidebar-item-icon"></em><span>Palette</span></a></li>
+                  </ul>
+                </li>
+                <li><a href="" title="Forms" data-ripple=""><em class="sidebar-item-caret fa pull-right fa-angle-right"></em><em class="sidebar-item-icon icon-book"></em><span>Forms</span></a>
+                  <ul class="nav sidebar-subnav">
+                    <li class="sidebar-subnav-header"><a><em class="sidebar-item-icon fa fa-angle-right"></em>Forms</a></li>
+                    <li><a href="form.inputs.html" title="Inputs" data-ripple=""><em class="sidebar-item-icon"></em><span>Inputs</span></a></li>
+                    <li><a href="form.validation.html" title="Validation" data-ripple=""><em class="sidebar-item-icon"></em><span>Validation</span></a></li>
+                    <li><a href="form.wizard.html" title="Wizard" data-ripple=""><em class="sidebar-item-icon"></em><span>Wizard</span></a></li>
+                    <li><a href="form.upload.html" title="Upload" data-ripple=""><em class="sidebar-item-icon"></em><span>Upload</span></a></li>
+                    <li><a href="form.xeditable.html" title="xEditable" data-ripple=""><em class="sidebar-item-icon"></em><span>xEditable</span></a></li>
+                    <li><a href="form.imagecrop.html" title="Image Crop" data-ripple=""><em class="sidebar-item-icon"></em><span>Image Crop</span></a></li>
+                  </ul>
+                </li>
+                <li><a href="" title="Tables" data-ripple=""><em class="sidebar-item-caret fa pull-right fa-angle-right"></em><em class="sidebar-item-icon icon-grid"></em><span>Tables</span></a>
+                  <ul class="nav sidebar-subnav">
+                    <li class="sidebar-subnav-header"><a><em class="sidebar-item-icon fa fa-angle-right"></em>Tables</a></li>
+                    <li><a href="table.responsive.html" title="Responsive" data-ripple=""><em class="sidebar-item-icon"></em><span>Responsive</span></a></li>
+                    <li><a href="table.datatables.html" title="Datables" data-ripple=""><em class="sidebar-item-icon"></em><span>Datables</span></a></li>
+                  </ul>
+                </li>
+                <li><a href="" title="Flot" data-ripple=""><em class="sidebar-item-caret fa pull-right fa-angle-right"></em><em class="sidebar-item-icon icon-bar-graph"></em><span>Charts</span></a>
+                  <ul class="nav sidebar-subnav">
+                    <li class="sidebar-subnav-header"><a><em class="sidebar-item-icon fa fa-angle-right"></em>Charts</a></li>
+                    <li><a href="charts.flot.html" title="Flot" data-ripple=""><em class="sidebar-item-icon"></em><span>Flot</span></a></li>
+                    <li><a href="charts.pie.html" title="Pie Charts" data-ripple=""><em class="sidebar-item-icon"></em><span>Pie</span></a></li>
+                  </ul>
+                </li>
+                <li><a href="" title="Maps" data-ripple=""><em class="sidebar-item-caret fa pull-right fa-angle-right"></em><em class="sidebar-item-icon icon-map"></em><span>Maps</span></a>
+                  <ul class="nav sidebar-subnav">
+                    <li class="sidebar-subnav-header"><a><em class="sidebar-item-icon fa fa-angle-right"></em>Maps</a></li>
+                    <li><a href="maps.google.html" title="Google Maps" data-ripple=""><em class="sidebar-item-icon"></em><span>Google Maps</span></a></li>
+                    <li><a href="maps.vector.html" title="Vector Maps" data-ripple=""><em class="sidebar-item-icon"></em><span>Vector Maps</span></a></li>
+                  </ul>
+                </li>
+                <li><a href="" title="Icons" data-ripple=""><em class="sidebar-item-caret fa pull-right fa-angle-right"></em><em class="sidebar-item-icon icon-play"></em><span>Icons</span></a>
+                  <ul class="nav sidebar-subnav">
+                    <li class="sidebar-subnav-header"><a><em class="sidebar-item-icon fa fa-angle-right"></em>Icons</a></li>
+                    <li><a href="icons.feather.html" title="Feather Icons" data-ripple=""><em class="sidebar-item-icon"></em><span>Feather Icons</span></a></li>
+                    <li><a href="icons.fa.html" title="Font Awesome" data-ripple=""><em class="sidebar-item-icon"></em><span>Font Awesome</span></a></li>
+                    <li><a href="icons.climacon.html" title="Climacons" data-ripple=""><em class="sidebar-item-icon"></em><span>Climacons</span></a></li>
+                    <li><a href="icons.weather.html" title="Weather Icons" data-ripple=""><em class="sidebar-item-icon"></em><span>Weather Icons</span></a></li>
+                  </ul>
+                </li>
+                <li>
+                  <hr>
+                </li>
+                <li class="nav-heading"><span class="text-muted">Extras</span></li>
+                <li><a href="" title="Extras" data-ripple=""><em class="sidebar-item-caret fa pull-right fa-angle-right"></em><em class="sidebar-item-icon icon-ribbon"></em><span>Extras</span></a>
+                  <ul class="nav sidebar-subnav">
+                    <li class="sidebar-subnav-header"><a><em class="sidebar-item-icon fa fa-angle-right"></em>Extras</a></li>
+                    <li><a href="extras.calendar.html" title="Calendar" data-ripple=""><em class="sidebar-item-icon"></em><span>Calendar</span></a></li>
+                    <li><a href="extras.tasks.html" title="Tasks List" data-ripple=""><em class="sidebar-item-icon"></em><span>Tasks List</span></a></li>
+                    <li><a href="extras.chat.html" title="Chat" data-ripple=""><em class="sidebar-item-icon"></em><span>Chat</span></a></li>
+                    <li>
+                      <hr>
+                    </li>
+                    <li><a href="extras.invoice.html" title="Invoice" data-ripple=""><em class="sidebar-item-icon"></em><span>Invoice</span></a></li>
+                    <li><a href="extras.price-table.html" title="Price" data-ripple=""><em class="sidebar-item-icon"></em><span>Price</span></a></li>
+                    <li><a href="extras.search.html" title="Search" data-ripple=""><em class="sidebar-item-icon"></em><span>Search</span></a></li>
+                    <li><a href="extras.timeline.html" title="Timeline" data-ripple=""><em class="sidebar-item-icon"></em><span>Timeline</span></a></li>
+                    <li><a href="extras.projects.html" title="Projects" data-ripple=""><em class="sidebar-item-icon"></em><span>Projects</span></a></li>
+                    <li><a href="extras.gallery.html" title="Gallery" data-ripple=""><em class="sidebar-item-icon"></em><span>Gallery</span></a></li>
+                    <li><a href="extras.profile.html" title="Profile" data-ripple=""><em class="sidebar-item-icon"></em><span>Profile</span></a></li>
+                    <li><a href="extras.template.html" title="Template" data-ripple=""><em class="sidebar-item-icon"></em><span>Template</span></a></li>
+                  </ul>
+                </li>
+                <li><a href="" title="Pages" data-ripple=""><em class="sidebar-item-caret fa pull-right fa-angle-right"></em><em class="sidebar-item-icon icon-stack"></em><span>Pages</span></a>
+                  <ul class="nav sidebar-subnav">
+                    <li class="sidebar-subnav-header"><a><em class="sidebar-item-icon fa fa-angle-right"></em>Pages</a></li>
+                    <li><a href="page.login.html" title="Login" data-ripple=""><em class="sidebar-item-icon"></em><span>Login</span></a></li>
+                    <li><a href="page.register.html" title="Sign up" data-ripple=""><em class="sidebar-item-icon"></em><span>Sign up</span></a></li>
+                    <li><a href="page.recover.html" title="Recover Password" data-ripple=""><em class="sidebar-item-icon"></em><span>Recover Password</span></a></li>
+                    <li><a href="page.lock.html" title="Lock" data-ripple=""><em class="sidebar-item-icon"></em><span>Lock</span></a></li>
+                  </ul>
+                </li>
+                <li><a href="../../angularjs" title="Static" ripple="" class="bg-danger"><em class="text-white sidebar-item-icon fa fa-shield"></em><span class="text-white">AngularJS Version</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- END Sidebar-->
+      </aside>
+      <!-- Main-->
+      <section>
+        <!-- Content-->
+        <div class="app">
+          <div class="app-view-header">Buttons</div>
+          <div class="row">
+            <div class="col-md-2">
+              <h4>Ripple</h4>
+            </div>
+            <div class="col-md-10">
+              <!-- START panel-->
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <button type="button" data-ripple="" class="mr mb-sm btn btn-default">Default</button>
+                  <button type="button" data-ripple="" class="mr mb-sm btn btn-primary">Primary</button>
+                  <button type="button" data-ripple="" class="mr mb-sm btn btn-info">Info</button>
+                  <button type="button" data-ripple="" class="mr mb-sm btn btn-success">Success</button>
+                  <button type="button" data-ripple="" class="mr mb-sm btn btn-warning">Warning</button>
+                  <button type="button" data-ripple="" class="mr mb-sm btn btn-danger">Danger</button>
+                  <button type="button" data-ripple="" class="mr mb-sm btn btn-inverse">Inverse</button>
+                  <button type="button" data-ripple="" class="mr mb-sm btn btn-amber">Amber</button>
+                  <button type="button" data-ripple="" class="mr mb-sm btn btn-purple">Purple</button>
+                  <button type="button" data-ripple="" class="mr mb-sm btn btn-pink">Pink</button>
+                  <button type="button" data-ripple="" class="mr mb-sm btn btn-orange">Orange</button>
+                </div>
+              </div>
+              <!-- END panel-->
+              
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <h4>Colors</h4>
+            </div>
+            <div class="col-md-10">
+              <!-- START panel-->
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <button type="button" class="mr mb-sm btn btn-default">Default</button>
+                  <button type="button" class="mr mb-sm btn btn-primary">Primary</button>
+                  <button type="button" class="mr mb-sm btn btn-info">Info</button>
+                  <button type="button" class="mr mb-sm btn btn-success">Success</button>
+                  <button type="button" class="mr mb-sm btn btn-warning">Warning</button>
+                  <button type="button" class="mr mb-sm btn btn-danger">Danger</button><br>
+                  <button type="button" class="mr mb-sm btn btn-inverse">Inverse</button>
+                  <button type="button" class="mr mb-sm btn btn-amber">Amber</button>
+                  <button type="button" class="mr mb-sm btn btn-purple">Purple</button>
+                  <button type="button" class="mr mb-sm btn btn-pink">Pink</button>
+                  <button type="button" class="mr mb-sm btn btn-orange">Orange</button>
+                </div>
+              </div>
+              <!-- END panel-->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <h4>Sizing</h4>
+            </div>
+            <div class="col-md-10">
+              <!-- START panel-->
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <p>
+                    <button type="button" class="mr btn btn-primary btn-lg">Large button</button>
+                    <button type="button" class="mr btn btn-default btn-sm">Small button</button>
+                    <button type="button" class="mr btn btn-default btn-xs">Extra small button</button>
+                  </p>
+                </div>
+              </div>
+              <!-- END panel-->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <h4>Pills</h4>
+            </div>
+            <div class="col-md-10">
+              <!-- START panel-->
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <button type="button" class="mr btn btn-pill-left btn-default">Default</button>
+                  <button type="button" class="mr btn btn-pill-left btn-primary">Primary</button>
+                  <button type="button" class="mr btn btn-pill-left btn-success">Success</button>
+                  <button type="button" class="mr btn btn-pill-right btn-info">Info</button>
+                  <button type="button" class="mr btn btn-pill-right btn-warning">Warning</button>
+                  <button type="button" class="mr btn btn-pill-right btn-danger">Danger</button>
+                </div>
+              </div>
+              <!-- END panel-->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <h4>Fixed Width</h4>
+            </div>
+            <div class="col-md-10">
+              <!-- START panel-->
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <p>
+                    <button type="button" class="mr btn btn-fw btn-primary">A</button>
+                    <button type="button" class="mr btn btn-fw btn-success">B</button>
+                    <button type="button" class="mr btn btn-fw btn-info">C</button>
+                    <button type="button" class="mr btn btn-fw btn-warning">D</button>
+                    <button type="button" class="mr btn btn-fw btn-danger">E</button>
+                  </p>
+                </div>
+              </div>
+              <!-- END panel-->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <h4>Labeled</h4>
+            </div>
+            <div class="col-md-10">
+              <!-- START panel-->
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <!-- Success button with label -->
+                  <button type="button" class="mr btn btn-labeled btn-success"><span class="btn-label"><i class="fa fa-check"></i></span>Success</button>
+                  <!-- Danger button with label -->
+                  <button type="button" class="mr btn btn-labeled btn-danger"><span class="btn-label"><i class="fa fa-times"></i></span>Danger</button>
+                  <!-- Info button with label -->
+                  <button type="button" class="mr btn btn-labeled btn-info"><span class="btn-label"><i class="fa fa-exclamation"></i></span>Info</button>
+                  <!-- Warning button with label -->
+                  <button type="button" class="mr btn btn-labeled btn-warning"><span class="btn-label"><i class="fa fa-warning"></i></span>Warning</button><br><br>
+                  <!-- Standard button with label -->
+                  <button type="button" class="mr btn btn-labeled btn-default"><span class="btn-label"><i class="fa fa-arrow-left"></i></span>Left</button>
+                  <!-- Standard button with label on the right side -->
+                  <button type="button" class="mr btn btn-labeled btn-default">Right<span class="btn-label btn-label-right"><i class="fa fa-arrow-right"></i></span></button>
+                </div>
+              </div>
+              <!-- END panel-->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <h4>Switch</h4>
+            </div>
+            <div class="col-md-10">
+              <!-- START panel-->
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <div class="btn-switch mb mr btn-switch-primary">
+                    <input type="checkbox" id="input-btn-switch-primary" checked="checked">
+                    <label for="input-btn-switch-primary" class="btn btn-primary"><em class="fa fa-check"></em>primary</label>
+                  </div>
+                  <div class="btn-switch mb mr btn-switch-success">
+                    <input type="checkbox" id="input-btn-switch-success">
+                    <label for="input-btn-switch-success" class="btn btn-success"><em class="fa fa-check"></em>success
+                    </label>
+                  </div>
+                  <div class="btn-switch mb mr btn-switch-info">
+                    <input type="checkbox" id="input-btn-switch-info">
+                    <label for="input-btn-switch-info" class="btn btn-info"><em class="fa fa-check"></em>info
+                    </label>
+                  </div>
+                  <div class="btn-switch mb mr btn-switch-warning">
+                    <input type="checkbox" id="input-btn-switch-warning">
+                    <label for="input-btn-switch-warning" class="btn btn-warning"><em class="fa fa-check"></em>warning
+                    </label>
+                  </div>
+                  <div class="btn-switch mb mr btn-switch-danger">
+                    <input type="checkbox" id="input-btn-switch-danger">
+                    <label for="input-btn-switch-danger" class="btn btn-danger"><em class="fa fa-check"></em>danger
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <!-- END panel-->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <h4>Shapes</h4>
+            </div>
+            <div class="col-md-10">
+              <!-- START panel-->
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <p>Button Circle</p>
+                  <p>
+                    <button type="button" class="mr btn btn-xl btn-circle btn-default"><em class="fa fa-star"></em></button>
+                    <button type="button" class="mr btn btn-xl btn-circle btn-danger"><em class="fa fa-star"></em></button>
+                    <button type="button" class="mr btn btn-lg btn-circle btn-warning"><em class="fa fa-star"></em></button>
+                    <button type="button" class="mr btn btn-lg btn-circle btn-primary"><em class="fa fa-star"></em></button>
+                    <button type="button" class="mr btn btn-circle btn-success"><em class="fa fa-star"></em></button>
+                    <button type="button" class="mr btn btn-circle btn-info"><em class="fa fa-star"></em></button>
+                  </p>
+                  <p>Button Oval</p>
+                  <p>
+                    <button type="button" class="mr btn btn-oval btn-default">Default</button>
+                    <button type="button" class="mr btn btn-oval btn-primary">Primary</button>
+                    <button type="button" class="mr btn btn-oval btn-success">Success</button>
+                    <button type="button" class="mr btn btn-oval btn-info">Info</button>
+                    <button type="button" class="mr btn btn-oval btn-warning">Warning</button>
+                    <button type="button" class="mr btn btn-oval btn-danger">Danger</button>
+                  </p><br>
+                  <p>Button Square</p>
+                  <p>
+                    <button type="button" class="mr btn btn-square btn-default">Default</button>
+                    <button type="button" class="mr btn btn-square btn-primary">Primary</button>
+                    <button type="button" class="mr btn btn-square btn-success">Success</button>
+                    <button type="button" class="mr btn btn-square btn-info">Info</button>
+                    <button type="button" class="mr btn btn-square btn-warning">Warning</button>
+                    <button type="button" class="mr btn btn-square btn-danger">Danger</button>
+                  </p>
+                </div>
+              </div>
+              <!-- END panel-->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <h4>Dropdown</h4>
+            </div>
+            <div class="col-md-10">
+              <!-- START panel-->
+              <div class="panel panel-default">
+                <div class="panel-body">
+                            <!-- START button group-->
+                            <div class="btn-group mb-sm mr dropdown">
+                              <button type="button" data-toggle="dropdown" data-ripple="" class="btn dropdown-toggle btn-default">default&nbsp;<span class="caret"></span>
+                              </button>
+                              <ul role="menu" class="dropdown-menu">
+                                <li><a href="">Action</a></li>
+                                <li><a href="">Another action</a></li>
+                                <li><a href="">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="">Separated link</a></li>
+                              </ul>
+                            </div>
+                            <!-- END button group-->
+                            <!-- START button group-->
+                            <div class="btn-group mb-sm mr dropdown">
+                              <button type="button" data-toggle="dropdown" data-ripple="" class="btn dropdown-toggle btn-primary">primary&nbsp;<span class="caret"></span>
+                              </button>
+                              <ul role="menu" class="dropdown-menu">
+                                <li><a href="">Action</a></li>
+                                <li><a href="">Another action</a></li>
+                                <li><a href="">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="">Separated link</a></li>
+                              </ul>
+                            </div>
+                            <!-- END button group-->
+                            <!-- START button group-->
+                            <div class="btn-group mb-sm mr dropdown">
+                              <button type="button" data-toggle="dropdown" data-ripple="" class="btn dropdown-toggle btn-success">success&nbsp;<span class="caret"></span>
+                              </button>
+                              <ul role="menu" class="dropdown-menu">
+                                <li><a href="">Action</a></li>
+                                <li><a href="">Another action</a></li>
+                                <li><a href="">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="">Separated link</a></li>
+                              </ul>
+                            </div>
+                            <!-- END button group-->
+                            <!-- START button group-->
+                            <div class="btn-group mb-sm mr dropdown">
+                              <button type="button" data-toggle="dropdown" data-ripple="" class="btn dropdown-toggle btn-info">info&nbsp;<span class="caret"></span>
+                              </button>
+                              <ul role="menu" class="dropdown-menu">
+                                <li><a href="">Action</a></li>
+                                <li><a href="">Another action</a></li>
+                                <li><a href="">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="">Separated link</a></li>
+                              </ul>
+                            </div>
+                            <!-- END button group-->
+                            <!-- START button group-->
+                            <div class="btn-group mb-sm mr dropdown">
+                              <button type="button" data-toggle="dropdown" data-ripple="" class="btn dropdown-toggle btn-warning">warning&nbsp;<span class="caret"></span>
+                              </button>
+                              <ul role="menu" class="dropdown-menu">
+                                <li><a href="">Action</a></li>
+                                <li><a href="">Another action</a></li>
+                                <li><a href="">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="">Separated link</a></li>
+                              </ul>
+                            </div>
+                            <!-- END button group-->
+                            <!-- START button group-->
+                            <div class="btn-group mb-sm mr dropdown">
+                              <button type="button" data-toggle="dropdown" data-ripple="" class="btn dropdown-toggle btn-danger">danger&nbsp;<span class="caret"></span>
+                              </button>
+                              <ul role="menu" class="dropdown-menu">
+                                <li><a href="">Action</a></li>
+                                <li><a href="">Another action</a></li>
+                                <li><a href="">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="">Separated link</a></li>
+                              </ul>
+                            </div>
+                            <!-- END button group-->
+                  <p class="mv-lg">Splitted</p>
+                            <!-- START button group-->
+                            <div class="btn-group dropdown mb mr">
+                              <button type="button" class="btn btn-default">Action</button>
+                              <button type="button" data-toggle="dropdown" data-ripple="" class="btn dropdown-toggle btn-default"><span class="caret"></span><span class="sr-only">default</span></button>
+                              <ul role="menu" class="dropdown-menu">
+                                <li><a href="">Action</a></li>
+                                <li><a href="">Another action</a></li>
+                                <li><a href="">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="">Separated link</a></li>
+                              </ul>
+                            </div>
+                            <!-- END button group-->
+                            <!-- START button group-->
+                            <div class="btn-group dropdown mb mr">
+                              <button type="button" class="btn btn-primary">Action</button>
+                              <button type="button" data-toggle="dropdown" data-ripple="" class="btn dropdown-toggle btn-primary"><span class="caret"></span><span class="sr-only">primary</span></button>
+                              <ul role="menu" class="dropdown-menu">
+                                <li><a href="">Action</a></li>
+                                <li><a href="">Another action</a></li>
+                                <li><a href="">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="">Separated link</a></li>
+                              </ul>
+                            </div>
+                            <!-- END button group-->
+                            <!-- START button group-->
+                            <div class="btn-group dropdown mb mr">
+                              <button type="button" class="btn btn-success">Action</button>
+                              <button type="button" data-toggle="dropdown" data-ripple="" class="btn dropdown-toggle btn-success"><span class="caret"></span><span class="sr-only">success</span></button>
+                              <ul role="menu" class="dropdown-menu">
+                                <li><a href="">Action</a></li>
+                                <li><a href="">Another action</a></li>
+                                <li><a href="">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="">Separated link</a></li>
+                              </ul>
+                            </div>
+                            <!-- END button group-->
+                            <!-- START button group-->
+                            <div class="btn-group dropdown mb mr">
+                              <button type="button" class="btn btn-info">Action</button>
+                              <button type="button" data-toggle="dropdown" data-ripple="" class="btn dropdown-toggle btn-info"><span class="caret"></span><span class="sr-only">info</span></button>
+                              <ul role="menu" class="dropdown-menu">
+                                <li><a href="">Action</a></li>
+                                <li><a href="">Another action</a></li>
+                                <li><a href="">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="">Separated link</a></li>
+                              </ul>
+                            </div>
+                            <!-- END button group-->
+                            <!-- START button group-->
+                            <div class="btn-group dropdown mb mr">
+                              <button type="button" class="btn btn-warning">Action</button>
+                              <button type="button" data-toggle="dropdown" data-ripple="" class="btn dropdown-toggle btn-warning"><span class="caret"></span><span class="sr-only">warning</span></button>
+                              <ul role="menu" class="dropdown-menu">
+                                <li><a href="">Action</a></li>
+                                <li><a href="">Another action</a></li>
+                                <li><a href="">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="">Separated link</a></li>
+                              </ul>
+                            </div>
+                            <!-- END button group-->
+                            <!-- START button group-->
+                            <div class="btn-group dropdown mb mr">
+                              <button type="button" class="btn btn-danger">Action</button>
+                              <button type="button" data-toggle="dropdown" data-ripple="" class="btn dropdown-toggle btn-danger"><span class="caret"></span><span class="sr-only">danger</span></button>
+                              <ul role="menu" class="dropdown-menu">
+                                <li><a href="">Action</a></li>
+                                <li><a href="">Another action</a></li>
+                                <li><a href="">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="">Separated link</a></li>
+                              </ul>
+                            </div>
+                            <!-- END button group-->
+                </div>
+              </div>
+              <!-- END panel-->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <h4>Dropdown Effects</h4>
+            </div>
+            <div class="col-md-10">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <!-- START row-->
+                  <div class="row">
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">zoomIn&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated zoomIn">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">zoomInDown&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated zoomInDown">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">zoomInLeft&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated zoomInLeft">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">zoomInRight&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated zoomInRight">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">zoomInUp&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated zoomInUp">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">bounce&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated bounce">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">flash&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated flash">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">pulse&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated pulse">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">rubberBand&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated rubberBand">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">shake&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated shake">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">swing&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated swing">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">tada&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated tada">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">wobble&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated wobble">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">bounceIn&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated bounceIn">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">bounceInDown&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated bounceInDown">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">bounceInLeft&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated bounceInLeft">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">bounceInRight&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated bounceInRight">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">bounceInUp&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated bounceInUp">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">fadeIn&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated fadeIn">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">fadeInDown&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated fadeInDown">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">fadeInDownBig&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated fadeInDownBig">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">fadeInLeft&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated fadeInLeft">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">fadeInLeftBig&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated fadeInLeftBig">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">fadeInRight&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated fadeInRight">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">fadeInRightBig&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated fadeInRightBig">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">fadeInUp&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated fadeInUp">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">fadeInUpBig&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated fadeInUpBig">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">flip&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated flip">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">flipInX&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated flipInX">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">flipInY&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated flipInY">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">lightSpeedIn&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated lightSpeedIn">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">rotateIn&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated rotateIn">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">rotateInDownLeft&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated rotateInDownLeft">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">rotateInDownRight&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated rotateInDownRight">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">rotateInUpLeft&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated rotateInUpLeft">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">rotateInUpRight&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated rotateInUpRight">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">hinge&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated hinge">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                <div class="p">
+                                  <!-- START button group-->
+                                  <div class="btn-group mr">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">rollIn&nbsp;<b class="caret"></b>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu animated rollIn">
+                                      <li><a href="">Action</a></li>
+                                      <li><a href="">Another action</a></li>
+                                      <li><a href="">Something else here</a></li>
+                                      <li><a href="">Separated link</a></li>
+                                    </ul>
+                                  </div>
+                                  <!-- END button group-->
+                                  
+                                </div>
+                    </div>
+                  </div>
+                  <!-- END row-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Page footer-->
+      <footer><span>&copy; 2015 - Application Name</span></footer>
+    </div>
+    <!-- Settings-->
+    <div class="settings-wrapper">
+      <div class="settings-inner">
+        <div class="settings-button"><em class="icon-cog"></em></div>
+        <div class="settings">
+          <div class="settings-inner">
+            <div class="settings-content">
+              <div class="pt ph">
+                <p class="text-muted">THEMES</p>
+                <div class="clearfix mb">
+                  <div class="pull-left wd-tiny mb">
+                    <div class="setting-color">
+                      <label>
+                        <input type="radio" name="setting-theme" value="0"><span class="icon-check"></span><span class="list-table"><span class="bg-white"></span><span class="bg-primary"></span><span class="bg-primary"></span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="pull-left wd-tiny mb">
+                    <div class="setting-color">
+                      <label>
+                        <input type="radio" name="setting-theme" value="1"><span class="icon-check"></span><span class="list-table"><span class="bg-white"></span><span class="bg-purple"></span><span class="bg-purple"></span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="pull-left wd-tiny mb">
+                    <div class="setting-color">
+                      <label>
+                        <input type="radio" name="setting-theme" value="2"><span class="icon-check"></span><span class="list-table"><span class="bg-white"></span><span class="bg-success"></span><span class="bg-success"></span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="pull-left wd-tiny mb">
+                    <div class="setting-color">
+                      <label>
+                        <input type="radio" name="setting-theme" value="3"><span class="icon-check"></span><span class="list-table"><span class="bg-white"></span><span class="bg-warning"></span><span class="bg-warning"></span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="pull-left wd-tiny mb">
+                    <div class="setting-color">
+                      <label>
+                        <input type="radio" name="setting-theme" value="4"><span class="icon-check"></span><span class="list-table"><span class="bg-white"></span><span class="bg-info"></span><span class="bg-info"></span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="pull-left wd-tiny mb">
+                    <div class="setting-color">
+                      <label>
+                        <input type="radio" name="setting-theme" value="5"><span class="icon-check"></span><span class="list-table"><span class="bg-white"></span><span class="bg-danger"></span><span class="bg-danger"></span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="pull-left wd-tiny mb">
+                    <div class="setting-color">
+                      <label>
+                        <input type="radio" name="setting-theme" value="6"><span class="icon-check"></span><span class="list-table"><span class="bg-white"></span><span class="bg-pink"></span><span class="bg-pink"></span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="pull-left wd-tiny mb">
+                    <div class="setting-color">
+                      <label>
+                        <input type="radio" name="setting-theme" value="7"><span class="icon-check"></span><span class="list-table"><span class="bg-white"></span><span class="bg-amber"></span><span class="bg-amber"></span></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="p">
+                <p class="text-muted">LAYOUT</p>
+                <div class="clearfix">
+                  <p class="pull-left">Fixed</p>
+                  <div class="pull-right">
+                    <label class="switch switch-info">
+                      <input id="layoutisfixed" type="checkbox"><span></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="clearfix">
+                  <p class="pull-left">Boxed</p>
+                  <div class="pull-right">
+                    <label class="switch switch-info">
+                      <input id="layoutisboxed" type="checkbox"><span></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="clearfix">
+                  <p class="pull-left">Material</p>
+                  <div class="pull-right">
+                    <label class="switch switch-info">
+                      <input id="layoutismaterial" type="checkbox"><span></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="p">
+                <p class="text-muted">SIDEBAR</p>
+                <div class="clearfix">
+                  <p class="pull-left">Mini</p>
+                  <div class="pull-right">
+                    <label class="switch switch-info">
+                      <input id="sidebarismini" type="checkbox"><span></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="clearfix">
+                  <p class="pull-left">Right</p>
+                  <div class="pull-right">
+                    <label class="switch switch-info">
+                      <input id="sidebarisright" type="checkbox"><span></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="p">
+                <p class="text-muted">FOOTER</p>
+                <div class="clearfix">
+                  <p class="pull-left">Hidden</p>
+                  <div class="pull-right">
+                    <label class="switch switch-info">
+                      <input id="footerhidden" type="checkbox"><span></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Settings-->
+    <!-- Layer Morph-->
+    <div class="layer-morph-overlay">
+      <div class="layer-morph-inner bg-info"></div>
+    </div>
+    <div class="layer-morph-close"><em class="icon-cross"></em></div>
+    <div class="layer-morph-container bg-info">
+      <div class="layer-morph-wrapper">
+        <div id="layer-search" class="layer-morph">
+          <form action="#">
+            <p class="help-block">Type and hit enter to search</p>
+            <input type="text" placeholder="I'm looking for..." class="form-control input-huge">
+            <button type="submit" class="hidden">Search</button>
+          </form>
+          <div class="row">
+            <div class="col-md-4 col-sm-6 pv">
+              <h4 class="text-bold pv-lg">People (4)</h4><br>
+              <ul class="list-unstyled">
+                <!-- START User-->
+                <li class="media">
+                  <div class="media-left media-middle">
+                    <!-- Contact avatar-->
+                    <div class="point-pin"><a href=""><img src="images/user/05.jpg" alt="Image" class="media-object img-circle thumb40"></a>
+                      <div class="point point-success point-lg"></div>
+                    </div>
+                  </div>
+                  <!-- Contact info-->
+                  <div class="media-body">
+                    <div class="media-heading"><a href="" class="text-md">Marc Fuller</a></div>
+                  </div>
+                </li>
+                <!-- END User-->
+                <!-- START User-->
+                <li>
+                  <hr>
+                </li>
+                <li class="media">
+                  <div class="media-left media-middle">
+                    <!-- Contact avatar-->
+                    <div class="point-pin"><a href=""><img src="images/user/06.jpg" alt="Image" class="media-object img-circle thumb40"></a>
+                      <div class="point point-success point-lg"></div>
+                    </div>
+                  </div>
+                  <!-- Contact info-->
+                  <div class="media-body">
+                    <div class="media-heading"><a href="" class="text-md">Wade Wade</a></div>
+                  </div>
+                </li>
+                <!-- END User-->
+                <!-- START User-->
+                <li>
+                  <hr>
+                </li>
+                <li class="media">
+                  <div class="media-left media-middle">
+                    <!-- Contact avatar-->
+                    <div class="point-pin"><a href=""><img src="images/user/07.jpg" alt="Image" class="media-object img-circle thumb40"></a>
+                      <div class="point point-danger point-lg"></div>
+                    </div>
+                  </div>
+                  <!-- Contact info-->
+                  <div class="media-body">
+                    <div class="media-heading"><a href="" class="text-md">Alan Boyd</a></div>
+                  </div>
+                </li>
+                <!-- END User-->
+                <!-- START User-->
+                <li>
+                  <hr>
+                </li>
+                <li class="media">
+                  <div class="media-left media-middle">
+                    <!-- Contact avatar-->
+                    <div class="point-pin"><a href=""><img src="images/user/01.jpg" alt="Image" class="media-object img-circle thumb40"></a>
+                      <div class="point point-danger point-lg"></div>
+                    </div>
+                  </div>
+                  <!-- Contact info-->
+                  <div class="media-body">
+                    <div class="media-heading"><a href="" class="text-md">Ryan Carr</a></div>
+                  </div>
+                </li>
+                <!-- END User-->
+              </ul>
+            </div>
+            <div class="col-md-4 col-sm-6 pv">
+              <h4 class="text-bold pv-lg">Pages (3)</h4><br>
+              <ul class="list-unstyled">
+                <li class="media">
+                  <div class="media-left media-middle">
+                    <div class="thumb40 bg-success circle text-center text-bold">D</div>
+                  </div>
+                  <div class="media-body">
+                    <div class="media-heading clearfix"><a href="dashboard.html" data-layer-morph-close="" class="pull-left text-md">Dashboard</a><small class="text-muted pull-right mt">3 matches</small></div>
+                  </div>
+                </li>
+                <li>
+                  <hr>
+                </li>
+                <li class="media">
+                  <div class="media-left media-middle">
+                    <div class="thumb40 bg-purple circle text-center text-bold">P</div>
+                  </div>
+                  <div class="media-body">
+                    <div class="media-heading clearfix"><a href="extras.profile.html" data-layer-morph-close="" class="pull-left text-md">Profile</a><small class="text-muted pull-right mt">3 matches</small></div>
+                  </div>
+                </li>
+                <li>
+                  <hr>
+                </li>
+                <li class="media">
+                  <div class="media-left media-middle">
+                    <div class="thumb40 bg-danger circle text-center text-bold">P</div>
+                  </div>
+                  <div class="media-body">
+                    <div class="media-heading clearfix"><a href="extras.projects.html" data-layer-morph-close="" class="pull-left text-md">Projects</a><small class="text-muted pull-right mt">2 match(es)</small></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="layer-morph-footer">Naut</div>
+      </div>
+    </div>
+    <!-- End Layer Morph-->
+    <script src="scripts/vendor.js"></script>
+    <script src="scripts/plugins.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
